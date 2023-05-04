@@ -1,4 +1,4 @@
-Can barı yapıldı. düzenleme yapılacak
+asdadsCan barı yapıldı. düzenleme yapılacak
 otomatik saldırma zombi yapıldı.
 Karaktere can değeri verildi.
 
@@ -21,4 +21,4 @@ yeni yapılanlar 04.05.23 13.03
 
 
 2. haritanın çitleri yapıldı.
-deneme
+denemeasdasd
