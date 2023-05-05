@@ -5,6 +5,9 @@ using UnityEngine;
 public class ZombiSaldırı : MonoBehaviour
 {
     public int damageAmount = 10;
+    //zombi takip
+    public GameObject Target;
+    public float speed = 1.5f;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -15,16 +18,10 @@ public class ZombiSaldırı : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void FixedUpdate()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        transform.LookAt(Target.gameObject.transform);
+        transform.Translate(Vector3.forward * Time.deltaTime * speed);
     }
 
 

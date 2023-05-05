@@ -356,9 +356,8 @@
 "Assets/Models/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Models/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/Scripts/kameraTakip.cs"
-"Assets/Scripts/Karaktermovement.cs"
+"Assets/Scripts/karakterController.cs"
 "Assets/Scripts/SağlıkDurumu.cs"
-"Assets/Scripts/ZombieTakip.cs"
 "Assets/Scripts/ZombiSaldırı.cs"
 -langversion:9.0
 

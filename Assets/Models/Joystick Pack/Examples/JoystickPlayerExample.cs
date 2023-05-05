@@ -32,6 +32,7 @@ public class JoystickPlayerExample : MonoBehaviour
         {
             Quaternion rotation = Quaternion.LookRotation(direction);
             rb.MoveRotation(rotation);
+            rb.angularVelocity = Vector3.zero;
         }
 
         // karakteri hareket ettir
