@@ -355,6 +355,7 @@
 "Assets/Models/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Models/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Models/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/Scripts/EnemySpawn.cs"
 "Assets/Scripts/kameraTakip.cs"
 "Assets/Scripts/karakterController.cs"
 "Assets/Scripts/SağlıkDurumu.cs"

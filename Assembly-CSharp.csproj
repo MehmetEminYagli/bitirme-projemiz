@@ -59,6 +59,7 @@
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\karakterController.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Base\Joystick.cs" />
