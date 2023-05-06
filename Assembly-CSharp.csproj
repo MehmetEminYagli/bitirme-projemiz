@@ -63,6 +63,7 @@
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Base\Joystick.cs" />
+    <Compile Include="Assets\Scripts\biozombiespawn.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickSetterExample.cs" />
     <Compile Include="Assets\Scripts\kameraTakip.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
@@ -71,6 +72,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Zombie\Materials\Standard_Two_Sided .shader" />
+    <None Include="Assets\PolygonZombies\Shaders\POLYGON_Zombies.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
