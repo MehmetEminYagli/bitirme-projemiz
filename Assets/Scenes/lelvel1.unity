@@ -7559,6 +7559,53 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3362143911151980145, guid: d9fc690e52a26ad45947b8b0dbc5f2bd, type: 3}
   m_PrefabInstance: {fileID: 1406457739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1413946573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1413946575}
+  - component: {fileID: 1413946574}
+  m_Layer: 0
+  m_Name: spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1413946574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413946573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f103b509dc357834895f6ec272279b4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1190313694}
+  maxEnemies: 20
+  spawnDelay: 1
+--- !u!4 &1413946575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413946573}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1421748070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2739574995243696385, guid: 4b3b356a77ccfe640a982b42b04ecd98, type: 3}
@@ -11783,7 +11830,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3379159402298878724, guid: 5f7afa630cdb03e4491a17f4f65694ef, type: 3}
       propertyPath: m_Name
-      value: zombidusman (11)
+      value: zombidusman
       objectReference: {fileID: 0}
     - target: {fileID: 3379159402298878724, guid: 5f7afa630cdb03e4491a17f4f65694ef, type: 3}
       propertyPath: m_Layer
@@ -11913,20 +11960,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3436305465643813312, guid: 5f7afa630cdb03e4491a17f4f65694ef, type: 3}
   m_PrefabInstance: {fileID: 2139162036}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2139162041
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1190313694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f103b509dc357834895f6ec272279b4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  followerPrefab: {fileID: 1190313694}
-  followerInterval: 1
 --- !u!4 &543450652829298340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2698698865658575766, guid: 518e352875011c343b3420f086418dbb, type: 3}

@@ -1,43 +1,43 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemySpawn : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject followerPrefab;
+    public GameObject enemyPrefab; // Düþman prefab'ý
+    public int maxEnemies = 10; // Spawn edilecek maksimum düþman sayýsý
+    public float spawnDelay = 1f; // Spawn aralýðý (saniye)
+    public float spawnRange = 15f; // Spawn aralýðý (birim)
 
-    [SerializeField]
-    private float followerInterval = 1;
+    private int spawnedEnemies = 0; // Þu ana kadar spawn edilmiþ düþman sayýsý
 
-    private int x;
-
-    private bool isSpawning = true;
-
-    void Start()
+    private void Start()
     {
-        x = 0;
-        StartCoroutine(spawnEnemy(followerInterval, followerPrefab));
+        // Kamera yüksekliði ve rotasyonu ayarla
+        Camera.main.transform.position = new Vector3(0f, 10f, 0f);
+        Camera.main.transform.rotation = Quaternion.Euler(60f, 45f, 0f);
+
+        StartCoroutine(SpawnEnemies());
     }
 
-    private IEnumerator spawnEnemy(float interval, GameObject enemy)
+    private IEnumerator SpawnEnemies()
     {
-        yield return new WaitForSeconds(2);
-
-        if (isSpawning && x < 50) // respawn durumunu ve düþman sayýsýný kontrol edin
+        while (spawnedEnemies < maxEnemies)
         {
-            GameObject newEnemy = Instantiate(enemy, new Vector3(Random.Range(-5f, 5), Random.Range(-6f, 6f), 0), Quaternion.identity);
-            x++;
+            yield return new WaitForSeconds(spawnDelay);
 
-            if (x == 50)
-            {
-                isSpawning = false;
-                Destroy(enemy);
-            }
-            else
-            {
-                StartCoroutine(spawnEnemy(interval, enemy));
-            }
+            // Rastgele spawn pozisyonu oluþtur
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRange, spawnRange), 0f, Random.Range(-spawnRange, spawnRange));
+
+            // Düþmaný spawn et
+            GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+            enemyObject.transform.localScale = new Vector3(1f, 1f, 1f);
+
+            spawnedEnemies++;
         }
+
+        // Maksimum düþman sayýsýna ulaþýldýðýnda yapýlacak iþlemler
+        // Coroutine'i durdur
+        StopCoroutine(SpawnEnemies());
     }
 }
