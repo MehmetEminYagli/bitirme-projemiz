@@ -39,4 +39,6 @@ public class SağlıkDurumu : MonoBehaviour
         isDead = true;
         // Karakter ölünce yapılacak işlemler
     }
+   
+   
 }
