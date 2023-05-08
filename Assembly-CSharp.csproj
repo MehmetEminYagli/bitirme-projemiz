@@ -69,6 +69,7 @@
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\FloatingJoystick.cs" />
     <Compile Include="Assets\Scripts\ZombiSaldırı.cs" />
     <Compile Include="Assets\Scripts\SağlıkDurumu.cs" />
+    <Compile Include="Assets\Scripts\atesetmesistemi.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Zombie\Materials\Standard_Two_Sided .shader" />
