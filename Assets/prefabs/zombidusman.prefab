@@ -2883,7 +2883,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3382313407698560508}
   - component: {fileID: 3436305465643813312}
-  - component: {fileID: 3899440027782559599}
   - component: {fileID: 3899440027782559594}
   m_Layer: 0
   m_Name: zombidusman
@@ -2930,19 +2929,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!65 &3899440027782559599
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3379159402298878724}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.4, y: 1.87, z: 0.24}
-  m_Center: {x: 0.06, y: 0.9, z: -0.07}
 --- !u!114 &3899440027782559594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2956,8 +2942,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 10
-  Target: {fileID: 0}
+  target: {fileID: 0}
   speed: 2
+  attackDistance: 1.5
+  attackCooldown: 2
+  animator: {fileID: 0}
 --- !u!1 &3379163300608634068
 GameObject:
   m_ObjectHideFlags: 0

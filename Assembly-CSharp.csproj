@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{65432B4F-5360-0D81-CA3C-4ADE83CDECA3}</ProjectGuid>
+    <ProjectGuid>{78823EF3-053A-37CA-4979-07969AB06E03}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -59,6 +59,7 @@
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\FixedJoystick.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\VariableJoystick.cs" />
     <Compile Include="Assets\Scripts\karakterController.cs" />
+    <Compile Include="Assets\Scripts\EnemySpawn.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Base\Joystick.cs" />
@@ -70,6 +71,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Zombie\Materials\Standard_Two_Sided .shader" />
+    <None Include="Assets\PolygonZombies\Shaders\POLYGON_Zombies.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
