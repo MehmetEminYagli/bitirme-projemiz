@@ -2029,6 +2029,7 @@ GameObject:
   - component: {fileID: 3984092968820863921}
   - component: {fileID: 3984092968820863922}
   - component: {fileID: 8328167834784489965}
+  - component: {fileID: 6751184377048089537}
   m_Layer: 0
   m_Name: Karakter
   m_TagString: Karakter
@@ -2121,9 +2122,28 @@ MonoBehaviour:
   variableJoystick: {fileID: 0}
   rb: {fileID: 3984092968820863921}
   animator: {fileID: 8328167834784489964}
-  startingHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 2520059952766695158}
+--- !u!114 &6751184377048089537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3330522964140777772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78e08f63f695c7e449c60caf88d41c25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  range: 100
+  fireRate: 15
+  impactForce: 30
+  fpsCam: {fileID: 0}
+  impactEffect: {fileID: 0}
+  detectionRadius: 10
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &3489300612084542352
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,8 +22,17 @@ public class ZombiSaldırı : MonoBehaviour
 
     private bool canAttack = true; // Saldırı yapabilme durumu
 
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
+    }
+
     void Update()
     {
+        if (target == null)
+            return;
+
         float distance = Vector3.Distance(transform.position, target.position);
 
         // Saldırı mesafesinde değilse yürümeye devam et
@@ -47,7 +56,7 @@ public class ZombiSaldırı : MonoBehaviour
             }
         }
     }
-  
+
     IEnumerator AttackCooldown()
     {
         canAttack = false;
@@ -55,7 +64,48 @@ public class ZombiSaldırı : MonoBehaviour
         canAttack = true;
     }
 
+    public float health = 50f;
 
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        if (health <= 0f)
+        {
+            Die();
+        }
+    }
 
+    void Die()
+    {
+        // Animator bileşeninin destroy edilip edilmediğini kontrol et
+        Animator anim = GetComponent<Animator>();
+        if (anim != null)
+        {
+            Destroy(anim);
+        }
 
+        // Tüm bileşenlerin destroy edilip edilmediğini kontrol et
+        bool canDestroy = true;
+        foreach (var component in GetComponents<Component>())
+        {
+            if (!(component is Transform) && component != this && component != anim)
+            {
+                if (component != null)
+                {
+                    Destroy(component);
+                }
+                else
+                {
+                    canDestroy = false;
+                }
+            }
+        }
+
+        // Tüm bileşenler destroy edilmişse gameObject da destroy edilir
+        if (canDestroy)
+        {
+            Destroy(gameObject);
+        }
+
+    }
 }

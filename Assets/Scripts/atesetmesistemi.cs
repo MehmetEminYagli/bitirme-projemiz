@@ -4,67 +4,64 @@ using UnityEngine;
 
 public class atesetmesistemi : MonoBehaviour
 {
-    public int maxAmmo = 30; // Maksimum mermi sayýsý
-    public float fireRate = 2f; // Ateþ hýzý (saniyede kaç kez ateþ edeceði)
-    public int bulletsPerShot = 3; // Ayný anda kaç mermi ateþlenecek
-    public float bulletSpread = 1f; // Mermilerin ne kadar yayýlacaðý
-    public float reloadTime = 2f; // Yeniden yükleme süresi
-   // public GameObject muzzleFlashPrefab; // Ateþ efekti prefab'i
-    public GameObject bulletPrefab; // Mermi prefab'i
-    public float bulletSpeed = 10f; // Mermi hareket hýzý
+    public float damage = 10f;
+    public float range = 100f;
+    public float fireRate = 15f;
+    public float impactForce = 30f;
+    public Camera fpsCam;
+    //public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
 
-    private int currentAmmo; // Mevcut mermi sayýsý
-    private float nextFireTime; // Sonraki ateþ zamaný
+    private float nextTimeToFire = 0f;
 
-    private void Start()
+    public float detectionRadius = 10f; // algýlama yarýçapý
+    public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
+    private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
+
+    void Update()
     {
-        currentAmmo = maxAmmo; // Baþlangýçta mermi sayýsý maksimum olacak
-    }
+        // Çember oluþturma
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius, enemyLayer);
 
-    private void Update()
-    {
-        // Ateþ etmek için hazýr mýyýz?
-        if (Time.time >= nextFireTime && currentAmmo > 0)
+        // Düþmanlarý bulma
+        int i = 0;
+        while (i < hitColliders.Length)
         {
-            // Mermi sayýsýný azalt
-            currentAmmo -= bulletsPerShot;
+            // Burada düþmanlarýnýza ne yapmak istediðinizi yapabilirsiniz (örn. hedefe niþan almak, ateþ etmek, vb.)
+            Debug.Log("Düþman bulundu: " + hitColliders[i].gameObject.name);
+            i++;
 
-            // Mermilerin yayýlmasýný hesapla
-            float angleStep = bulletSpread / (bulletsPerShot - 1);
-            float angle = -bulletSpread / 2f;
-
-            // Her mermi için ateþ et
-            for (int i = 0; i < bulletsPerShot; i++)
+            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
             {
-                // Mermi oluþtur
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
-                Destroy(bullet, 2f); // Mermi 5 saniye sonra yok olacak
-
-                // Mermiye rastgele bir yön ver
-                Vector2 direction = Quaternion.Euler(0, 0, angle) * transform.right;
-
-                // Mermiyi ateþle
-                bullet.GetComponent<Rigidbody>().velocity = direction * bulletSpeed;
-
-                // Açýyý artýr
-                angle += angleStep;
-            }
-
-            // Ateþ efekti oluþtur
-         /*   GameObject muzzleFlash = Instantiate(muzzleFlashPrefab, transform.position, transform.rotation);
-            Destroy(muzzleFlash, 0.2f);*/
-
-            // Sonraki ateþ zamanýný hesapla
-            nextFireTime = Time.time + 1f / fireRate;
-
-            // Mermi sayýsý sýfýr olduysa, yeniden yükle
-            if (currentAmmo == 0)
-            {
-                nextFireTime += reloadTime;
-                currentAmmo = maxAmmo;
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Shoot();
             }
         }
+
+       
     }
+
+    void Shoot()
+    {
+        //muzzleFlash.Play();
+        RaycastHit hit;
+        if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
+        {
+            Debug.Log(hit.transform.name);
+            ZombiSaldýrý enemy = hit.transform.GetComponent<ZombiSaldýrý>();
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+            if (hit.rigidbody != null)
+            {
+                hit.rigidbody.AddForce(-hit.normal * impactForce);
+            }
+            GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            Destroy(impactGO, 2f);
+        }
+    }
+
 
 
 
