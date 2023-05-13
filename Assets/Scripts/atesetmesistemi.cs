@@ -19,9 +19,12 @@ public class atesetmesistemi : MonoBehaviour
     public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
     private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
 
+   
+
+    
     private void Start()
     {
-        
+       
     }
     void Update()
     {

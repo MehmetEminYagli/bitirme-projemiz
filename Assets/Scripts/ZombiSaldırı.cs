@@ -1,6 +1,6 @@
 using System.Collections;
 using UnityEngine;
-
+using UnityEngine.AI;
 public class ZombiSaldırı : MonoBehaviour
 {
     public int damageAmount = 10;
@@ -19,6 +19,9 @@ public class ZombiSaldırı : MonoBehaviour
     public float attackCooldown = 2f; // Saldırı aralığı
     public Animator animator; // Düşmanın Animator component'i
 
+    [SerializeField] float currentHealth;
+    [SerializeField] ZombiCanBar HealthbarScript;                 // zombi can durumu bakma 
+    [HideInInspector] public float enemymaxHealt = 20f;
 
     private bool canAttack = true; // Saldırı yapabilme durumu
 
@@ -26,6 +29,9 @@ public class ZombiSaldırı : MonoBehaviour
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        currentHealth = enemymaxHealt;                                      //başlangıçta can değerini max a ayarla.
+        HealthbarScript.HealthBarProgress(currentHealth, enemymaxHealt); // Zombicanbar scriptindeki healtbarprogress bileşeninin içine current ve enemymaxhealt değerini gönderir.
+        HealthbarScript.transform.gameObject.SetActive(false); // healtbar scriptinin görünürlüğünü başlangıçta  kapatiyoruz.
     }
 
     void Update()
@@ -64,12 +70,13 @@ public class ZombiSaldırı : MonoBehaviour
         canAttack = true;
     }
 
-    public float health = 50f;
+    
 
     public void TakeDamage(float amount)
     {
-        health -= amount;
-        if (health <= 0f)
+        currentHealth -= amount;
+        HealthbarScript.HealthBarProgress(currentHealth, enemymaxHealt);
+        if (currentHealth <= 0f)
         {
             Die();
         }
@@ -108,4 +115,8 @@ public class ZombiSaldırı : MonoBehaviour
         }
 
     }
+}
+
+internal class HealthBar
+{
 }
