@@ -9,7 +9,8 @@ public class atesetmesistemi : MonoBehaviour
     public float fireRate = 15f;
     public float impactForce = 30f;
     public Camera fpsCam;
-    //public ParticleSystem muzzleFlash;
+    public ParticleSystem muzzleFlash;
+    
     public GameObject impactEffect;
 
     private float nextTimeToFire = 0f;
@@ -18,6 +19,10 @@ public class atesetmesistemi : MonoBehaviour
     public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
     private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
 
+    private void Start()
+    {
+        
+    }
     void Update()
     {
         // Çember oluþturma
@@ -34,6 +39,7 @@ public class atesetmesistemi : MonoBehaviour
             if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
             {
                 nextTimeToFire = Time.time + 1f / fireRate;
+                
                 Shoot();
             }
         }
@@ -43,7 +49,7 @@ public class atesetmesistemi : MonoBehaviour
 
     void Shoot()
     {
-        //muzzleFlash.Play();
+        muzzleFlash.Play(); 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -59,6 +65,9 @@ public class atesetmesistemi : MonoBehaviour
             }
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
+
+           
+           
         }
     }
 
