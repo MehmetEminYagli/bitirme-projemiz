@@ -10,7 +10,6 @@ public class atesetmesistemi : MonoBehaviour
     public float impactForce = 30f;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
-    
     public GameObject impactEffect;
 
     private float nextTimeToFire = 0f;
@@ -19,40 +18,30 @@ public class atesetmesistemi : MonoBehaviour
     public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
     private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
 
-   
 
-    
-    private void Start()
+    private void Update()
     {
-       
-    }
-    void Update()
-    {
-        // Çember oluþturma
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius, enemyLayer);
 
-        // Düþmanlarý bulma
         int i = 0;
         while (i < hitColliders.Length)
         {
-            // Burada düþmanlarýnýza ne yapmak istediðinizi yapabilirsiniz (örn. hedefe niþan almak, ateþ etmek, vb.)
             Debug.Log("Düþman bulundu: " + hitColliders[i].gameObject.name);
             i++;
-
-            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
-            {
-                nextTimeToFire = Time.time + 1f / fireRate;
-                
-                Shoot();
-            }
         }
 
-       
+        
+        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+        {
+            nextTimeToFire = Time.time + 1f / fireRate;
+            Shoot();
+        }
     }
 
     void Shoot()
     {
-        muzzleFlash.Play(); 
+        muzzleFlash.Play();
+
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
@@ -68,13 +57,10 @@ public class atesetmesistemi : MonoBehaviour
             }
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
-
-           
-           
         }
     }
 
-
+   
 
 
 }

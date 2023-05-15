@@ -1152,12 +1152,32 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
+      propertyPath: lengthInSec
+      value: 0.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
       propertyPath: InitialModule.startSize.scalar
       value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 0.7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6795933142159316547, guid: 1f27e0611e2bbf64f97ada9ff0a56f88, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
@@ -3175,7 +3195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6238431494908036600, guid: 4d905b5f2664cf64b9a4c072f1b286f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.15
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 6238431494908036600, guid: 4d905b5f2664cf64b9a4c072f1b286f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10360,7 +10380,7 @@ GameObject:
   - component: {fileID: 1711190066}
   - component: {fileID: 1711190067}
   m_Layer: 0
-  m_Name: biozombie
+  m_Name: biozombiespawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16132,7 +16152,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10
+  m_Radius: 5
   m_Center: {x: 0, y: 0.92, z: 0}
 --- !u!114 &919132148825879595
 MonoBehaviour:
@@ -16781,6 +16801,10 @@ PrefabInstance:
       value: karakterprefab
       objectReference: {fileID: 0}
     - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
+      propertyPath: range
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
       propertyPath: damage
       value: 50
       objectReference: {fileID: 0}
@@ -16788,6 +16812,10 @@ PrefabInstance:
       propertyPath: fpsCam
       value: 
       objectReference: {fileID: 1182766070}
+    - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
+      propertyPath: fireRate
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
       propertyPath: muzzleFlash
       value: 
@@ -16797,8 +16825,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6838465621540847381}
     - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
+      propertyPath: detectionRadius
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
       propertyPath: enemyLayer.m_Bits
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6751184377048089537, guid: 518e352875011c343b3420f086418dbb, type: 3}
+      propertyPath: characterController
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7141300539484396024, guid: 518e352875011c343b3420f086418dbb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17361,7 +17397,7 @@ Transform:
   m_GameObject: {fileID: 6838465621540847381}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.425, z: 7.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5025637204452659207}
@@ -17395,7 +17431,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6838465621540847381}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.05, y: 0.05, z: 0.05}
