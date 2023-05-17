@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< Updated upstream
-- path: "Assets/Scenes/MainMen\xFC.unity"
-=======
-- path: Assets/Scenes/level 1.unity
->>>>>>> Stashed changes
+- path: Assets/Scenes/level 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
