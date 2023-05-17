@@ -348,12 +348,12 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.TestRunner.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Plugins/TextToTMP/Editor/ComponentProperties.cs"
-"Assets/Plugins/TextToTMP/Editor/ComponentUpgrade.cs"
-"Assets/Plugins/TextToTMP/Editor/ReferenceCollection.cs"
-"Assets/Plugins/TextToTMP/Editor/ScriptUpgrade.cs"
-"Assets/Plugins/TextToTMP/Editor/TextToTMPWindow.cs"
-"Assets/Plugins/TextToTMP/Editor/Utilities.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/ComponentProperties.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/ComponentUpgrade.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/ReferenceCollection.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/ScriptUpgrade.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/TextToTMPWindow.cs"
+"Assets/Models/Plugins/TextToTMP/Editor/Utilities.cs"
 -langversion:9.0
 
 /deterministic

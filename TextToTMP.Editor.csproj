@@ -56,15 +56,15 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\TextToTMPWindow.cs" />
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\Utilities.cs" />
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\ScriptUpgrade.cs" />
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\ReferenceCollection.cs" />
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\ComponentUpgrade.cs" />
-    <Compile Include="Assets\Plugins\TextToTMP\Editor\ComponentProperties.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\TextToTMPWindow.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\Utilities.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\ScriptUpgrade.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\ReferenceCollection.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\ComponentUpgrade.cs" />
+    <Compile Include="Assets\Models\Plugins\TextToTMP\Editor\ComponentProperties.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Plugins\TextToTMP\Editor\TextToTMP.Editor.asmdef" />
+    <None Include="Assets\Models\Plugins\TextToTMP\Editor\TextToTMP.Editor.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
