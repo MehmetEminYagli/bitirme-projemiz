@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 C:\Users\Teoman\Desktop\bitirme-prj\bitirme-projemiz
+=======
+C:\Users\MehmetEmin\Desktop\proje\bitirme-projemiz
+>>>>>>> Stashed changes
