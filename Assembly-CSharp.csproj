@@ -70,12 +70,8 @@
     <Compile Include="Assets\Scripts\atesetmesistemi.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickPlayerExample.cs" />
-<<<<<<< HEAD
-    <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
-    <Compile Include="Assets\Scripts\PauseMenu.cs" />
-=======
     <Compile Include="Assets\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
->>>>>>> parent of 10272303 (kücükupdate)
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MainMenü.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Scripts\Joysticks\DynamicJoystick.cs" />
     <Compile Include="Assets\JMO Assets\WarFX\Demo\Assets\WFX_Demo_DeleteAfterDelay.cs" />
