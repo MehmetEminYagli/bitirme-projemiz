@@ -2938,17 +2938,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Rigidbody
 
-		//System.Void UnityEngine.Rigidbody::AddExplosionForce_Injected(System.Single,UnityEngine.Vector3&,System.Single,System.Single,UnityEngine.ForceMode)
-		void Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
-		Register_UnityEngine_Rigidbody_AddExplosionForce_Injected();
-
 		//System.Void UnityEngine.Rigidbody::AddForce_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
 		void Register_UnityEngine_Rigidbody_AddForce_Injected();
 		Register_UnityEngine_Rigidbody_AddForce_Injected();
-
-		//System.Void UnityEngine.Rigidbody::AddTorque_Injected(UnityEngine.Vector3&,UnityEngine.ForceMode)
-		void Register_UnityEngine_Rigidbody_AddTorque_Injected();
-		Register_UnityEngine_Rigidbody_AddTorque_Injected();
 
 		//System.Void UnityEngine.Rigidbody::MoveRotation_Injected(UnityEngine.Quaternion&)
 		void Register_UnityEngine_Rigidbody_MoveRotation_Injected();
@@ -2957,6 +2949,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.Rigidbody::set_angularVelocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
 		Register_UnityEngine_Rigidbody_set_angularVelocity_Injected();
+
+		//System.Void UnityEngine.Rigidbody::set_useGravity(System.Boolean)
+		void Register_UnityEngine_Rigidbody_set_useGravity();
+		Register_UnityEngine_Rigidbody_set_useGravity();
 
 		//System.Void UnityEngine.Rigidbody::set_velocity_Injected(UnityEngine.Vector3&)
 		void Register_UnityEngine_Rigidbody_set_velocity_Injected();

@@ -2,6 +2,8 @@ Using template 'D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer\
 
 android.hardware.vulkan.version was added because:
 	One of the graphics devices was Vulkan
+supports-gl-texture elements added because:
+	TextureSupport was not set to generic
 android.hardware.touchscreen.multitouch, android.hardware.touchscreen.multitouch.distinct were enabled because:
 	UnityEngine.Input::GetTouch was present in:
 		UnityEngine.UI-FeaturesChecked.txt

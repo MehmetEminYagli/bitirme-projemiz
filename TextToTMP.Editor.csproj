@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{F37FC349-3DA4-9A6C-3899-194A0AD9CF4E}</ProjectGuid>
+    <ProjectGuid>{67E89CCB-19AE-7DDD-D1BF-F930F80DD60F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>TextToTMP.Editor</AssemblyName>

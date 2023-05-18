@@ -11,6 +11,8 @@ public class biozombiespawn : MonoBehaviour
 
     private int spawnedEnemies = 0; // Þu ana kadar spawn edilmiþ düþman sayýsý
 
+    public float mapBoundary = 20f; // Harita sýnýrlarý
+
     private void Start()
     {
         // Kamera yüksekliði ve rotasyonu ayarla
@@ -26,12 +28,18 @@ public class biozombiespawn : MonoBehaviour
         {
             yield return new WaitForSeconds(spawnDelay);
 
+            // Karakterin yüksekliðini al
+            float playerY = transform.position.y;
+
             // Rastgele spawn pozisyonu oluþtur
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRange, spawnRange), 0f, Random.Range(-spawnRange, spawnRange));
+            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRange, spawnRange), playerY, Random.Range(-spawnRange, spawnRange));
+            spawnPosition = ClampPositionToMap(spawnPosition);
 
             // Düþmaný spawn et
             GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
             enemyObject.transform.localScale = new Vector3(0.01f, 0.01f, 0.01f);
+
+            enemyObject.GetComponent<Rigidbody>().useGravity = true; // Yerçekimini etkinleþtir
 
             spawnedEnemies++;
         }
@@ -40,4 +48,19 @@ public class biozombiespawn : MonoBehaviour
         // Coroutine'i durdur
         StopCoroutine(SpawnEnemies());
     }
+
+    private Vector3 ClampPositionToMap(Vector3 position)
+    {
+        // Harita sýnýrlarýný kontrol et ve pozisyonu sýnýrla
+        float minX = -mapBoundary;
+        float maxX = mapBoundary;
+        float minZ = -mapBoundary;
+        float maxZ = mapBoundary;
+
+        position.x = Mathf.Clamp(position.x, minX, maxX);
+        position.z = Mathf.Clamp(position.z, minZ, maxZ);
+
+        return position;
+    }
+
 }

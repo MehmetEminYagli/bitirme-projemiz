@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E8C40CB8-075E-2923-F33D-DFF5C6EDB915}</ProjectGuid>
+    <ProjectGuid>{16158125-34BC-86B8-C1F7-806A95A597A1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -826,11 +826,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{643AE18F-A072-965D-F6A4-09BEA3583A12}</Project>
+      <Project>{78823EF3-053A-37CA-4979-07969AB06E03}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="TextToTMP.Editor.csproj">
-      <Project>{F37FC349-3DA4-9A6C-3899-194A0AD9CF4E}</Project>
+      <Project>{67E89CCB-19AE-7DDD-D1BF-F930F80DD60F}</Project>
       <Name>TextToTMP.Editor</Name>
     </ProjectReference>
   </ItemGroup>

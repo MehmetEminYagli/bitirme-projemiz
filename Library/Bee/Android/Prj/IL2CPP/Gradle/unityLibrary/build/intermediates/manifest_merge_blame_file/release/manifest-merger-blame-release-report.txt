@@ -2,8 +2,8 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    xmlns:tools="http://schemas.android.com/tools"
 4    package="com.unity3d.player"
-5    android:versionCode="1"
-6    android:versionName="0.1" >
+5    android:versionCode="4"
+6    android:versionName="0.31" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="25"
@@ -20,101 +20,106 @@
 14-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:17-63
 15        android:required="false" />
 15-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:64-88
-16    <uses-feature
-16-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-88
-17        android:name="android.hardware.touchscreen"
-17-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:17-60
-18        android:required="false" />
-18-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:61-85
+16
+17    <supports-gl-texture android:name="GL_OES_compressed_ETC1_RGB8_texture" />
+17-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:3-77
+17-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:24-74
+18
 19    <uses-feature
-19-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-99
-20        android:name="android.hardware.touchscreen.multitouch"
-20-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-71
+19-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:3-88
+20        android:name="android.hardware.touchscreen"
+20-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:17-60
 21        android:required="false" />
-21-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:72-96
+21-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:61-85
 22    <uses-feature
-22-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-108
-23        android:name="android.hardware.touchscreen.multitouch.distinct"
-23-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-80
+22-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:3-99
+23        android:name="android.hardware.touchscreen.multitouch"
+23-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-71
 24        android:required="false" />
-24-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:81-105
-25
-26    <application android:extractNativeLibs="true" >
-26-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
-26-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
-27        <activity
-27-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
-28            android:name="com.unity3d.player.UnityPlayerActivity"
-28-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
-29            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-29-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
-30            android:exported="true"
-30-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:433-456
-31            android:hardwareAccelerated="false"
-31-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
-32            android:launchMode="singleTask"
-32-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
-33            android:resizeableActivity="false"
-33-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
-34            android:screenOrientation="fullUser"
-34-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
-35            android:theme="@style/UnityThemeSelector" >
-35-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
-36            <intent-filter>
-36-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
-37-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
-39-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
-40            </intent-filter>
+24-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:72-96
+25    <uses-feature
+25-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:3-108
+26        android:name="android.hardware.touchscreen.multitouch.distinct"
+26-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:17-80
+27        android:required="false" />
+27-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:23:81-105
+28
+29    <application android:extractNativeLibs="true" >
+29-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-17:17
+29-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:16-48
+30        <activity
+30-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:5-11:16
+31            android:name="com.unity3d.player.UnityPlayerActivity"
+31-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
+32            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+32-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:180-361
+33            android:exported="true"
+33-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:433-456
+34            android:hardwareAccelerated="false"
+34-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:397-432
+35            android:launchMode="singleTask"
+35-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:148-179
+36            android:resizeableActivity="false"
+36-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:362-396
+37            android:screenOrientation="fullUser"
+37-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-147
+38            android:theme="@style/UnityThemeSelector" >
+38-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
+39            <intent-filter>
+39-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:7-8:23
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:9-61
+40-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-58
 41
-42            <meta-data
-42-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
-43                android:name="unityplayer.UnityActivity"
-43-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
-44                android:value="true" />
-44-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:9-69
+42-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:19-66
+43            </intent-filter>
+44
 45            <meta-data
-45-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
-46                android:name="android.notch_support"
-46-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+45-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:7-82
+46                android:name="unityplayer.UnityActivity"
+46-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:18-58
 47                android:value="true" />
-47-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
-48        </activity>
-49
-50        <meta-data
-50-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
-51            android:name="unity.splash-mode"
-51-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
-52            android:value="0" />
-52-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
+47-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:59-79
+48            <meta-data
+48-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:7-78
+49                android:name="android.notch_support"
+49-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:18-54
+50                android:value="true" />
+50-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:55-75
+51        </activity>
+52
 53        <meta-data
-53-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
-54            android:name="unity.splash-enable"
-54-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
-55            android:value="True" />
-55-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
+53-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-69
+54            android:name="unity.splash-mode"
+54-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-48
+55            android:value="0" />
+55-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:49-66
 56        <meta-data
-56-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
-57            android:name="unity.launch-fullscreen"
-57-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+56-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-74
+57            android:name="unity.splash-enable"
+57-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-50
 58            android:value="True" />
-58-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
+58-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:51-71
 59        <meta-data
-59-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
-60            android:name="unity.allow-resizable-window"
-60-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
-61            android:value="False" />
-61-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+59-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-78
+60            android:name="unity.launch-fullscreen"
+60-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-54
+61            android:value="True" />
+61-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:55-75
 62        <meta-data
-62-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
-63            android:name="notch.config"
-63-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
-64            android:value="portrait|landscape" />
-64-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
-65    </application>
-66
-67</manifest>
+62-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-84
+63            android:name="unity.allow-resizable-window"
+63-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-59
+64            android:value="False" />
+64-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:60-81
+65        <meta-data
+65-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-81
+66            android:name="notch.config"
+66-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-43
+67            android:value="portrait|landscape" />
+67-->C:\Users\MehmetEmin\Desktop\deneme\bitirme\bitirme-projemiz\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:44-78
+68    </application>
+69
+70</manifest>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{643AE18F-A072-965D-F6A4-09BEA3583A12}</ProjectGuid>
+    <ProjectGuid>{78823EF3-053A-37CA-4979-07969AB06E03}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\ZombiSaldırı.cs" />
     <Compile Include="Assets\Scripts\SağlıkDurumu.cs" />
     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Zombie\Materials\Standard_Two_Sided .shader" />
@@ -821,7 +822,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="TextToTMP.Editor.csproj">
-      <Project>{F37FC349-3DA4-9A6C-3899-194A0AD9CF4E}</Project>
+      <Project>{67E89CCB-19AE-7DDD-D1BF-F930F80DD60F}</Project>
       <Name>TextToTMP.Editor</Name>
     </ProjectReference>
   </ItemGroup>

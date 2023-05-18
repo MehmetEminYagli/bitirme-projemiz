@@ -657,11 +657,10 @@ UnityEngine.RenderTexture::GetTemporary_Internal_Injected
 UnityEngine.Resources::GetBuiltinResource
 UnityEngine.ResourcesAPIInternal::Load
 UnityEngine.ResourcesAPIInternal::FindShaderByName
-UnityEngine.Rigidbody::AddExplosionForce_Injected
 UnityEngine.Rigidbody::AddForce_Injected
-UnityEngine.Rigidbody::AddTorque_Injected
 UnityEngine.Rigidbody::MoveRotation_Injected
 UnityEngine.Rigidbody::set_angularVelocity_Injected
+UnityEngine.Rigidbody::set_useGravity
 UnityEngine.Rigidbody::set_velocity_Injected
 UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
