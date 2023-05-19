@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\ZombiCanBar.cs" />
     <Compile Include="Assets\Scripts\atesetmesistemi.cs" />
     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_Wall.cs" />
+    <Compile Include="Assets\Scripts\LevelManager.cs" />
     <Compile Include="Assets\Models\Joystick Pack\Examples\JoystickPlayerExample.cs" />
     <Compile Include="Assets\Models\JMO Assets\WarFX\Scripts\CFX_AutoDestructShuriken.cs" />
     <Compile Include="Assets\Scripts\MainMenü.cs" />
@@ -86,7 +87,6 @@
     <Compile Include="Assets\Scripts\ZombiSaldırı.cs" />
     <Compile Include="Assets\Scripts\SağlıkDurumu.cs" />
     <Compile Include="Assets\Models\JMO Assets\WarFX\Demo\Assets\WFX_Demo_New.cs" />
-    <Compile Include="Assets\Scripts\LevelManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Models\Zombie\Materials\Standard_Two_Sided .shader" />
