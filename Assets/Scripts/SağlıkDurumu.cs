@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SağlıkDurumu : MonoBehaviour
 {
@@ -9,9 +10,11 @@ public class SağlıkDurumu : MonoBehaviour
     public int currentHealth;               // Mevcut sağlık
     public Slider healthBar;                // Sağlık çubuğu
     private bool isDead;                    // Karakterin ölüp ölmediğini tutar
-
+   
+        
     private void Start()
     {
+        isDead = false;
         currentHealth = startingHealth;
         healthBar.maxValue = startingHealth; // Sağlık çubuğu için maksimum değeri ayarla
         healthBar.value = startingHealth; // Sağlık çubuğunu başlangıç sağlığına ayarla
@@ -30,15 +33,16 @@ public class SağlıkDurumu : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            Die();
+            Die(); 
         }
     }
 
     private void Die()
     {
         isDead = true;
-        // Karakter ölünce yapılacak işlemler
+      
     }
-   
-   
+    
+
+
 }
