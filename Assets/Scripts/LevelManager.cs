@@ -1,15 +1,27 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+    
 public class LevelManager : MonoBehaviour
 {
     private int level = 1;
     private int düþmanSayýsý = 0;
+    public GameObject winnerpanel;
+    
+    public GameObject karaktercangostergesi;
+    public GameObject pausebuton;
+    public GameObject karakterhareketcanvas;
 
+
+    private void Start()
+    {
+        winnerpanel.SetActive(false);
+      
+    }
+ 
     public void DüþmanÖldürüldü()
     {
         düþmanSayýsý++;
-
+     
         LevelTamamlandýKontrolü();
     }
 
@@ -17,6 +29,10 @@ public class LevelManager : MonoBehaviour
     {
         if (düþmanSayýsý >= 10)
         {
+            winnerpanel.SetActive(true);
+            karaktercangostergesi.SetActive(false);
+            karakterhareketcanvas.SetActive(false);
+            pausebuton.SetActive(false);
             // "Winner" yazýsýný göster
             // Main menü ve next level butonlarýný aktif hale getir
         }
@@ -24,7 +40,7 @@ public class LevelManager : MonoBehaviour
 
     public void MainMenu()
     {
-        // Ana menüye dön
+        SceneManager.LoadScene(0); // Panel sýralamasýndaki 0. yi getirir yani mainmenü panelini.
     }
 
     public void NextLevel()

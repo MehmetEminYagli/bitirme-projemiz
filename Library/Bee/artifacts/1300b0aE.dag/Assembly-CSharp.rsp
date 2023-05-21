@@ -374,6 +374,7 @@
 "Assets/Scripts/biozombiespawn.cs"
 "Assets/Scripts/EnemySpawn.cs"
 "Assets/Scripts/GameOver.cs"
+"Assets/Scripts/gecensure.cs"
 "Assets/Scripts/kameraTakip.cs"
 "Assets/Scripts/karakterController.cs"
 "Assets/Scripts/LevelManager.cs"
