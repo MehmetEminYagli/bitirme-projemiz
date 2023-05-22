@@ -17076,7 +17076,6 @@ GameObject:
   - component: {fileID: 983521153}
   - component: {fileID: 983521155}
   - component: {fileID: 983521154}
-  - component: {fileID: 983521156}
   m_Layer: 5
   m_Name: winner
   m_TagString: Untagged
@@ -17145,22 +17144,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983521152}
   m_CullTransparentMesh: 1
---- !u!114 &983521156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 983521152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fa83032423186948a0bf83536c25f6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  winnerpanel: {fileID: 983521152}
-  karaktercangostergesi: {fileID: 22831632}
-  pausebuton: {fileID: 1861586238}
-  karakterhareketcanvas: {fileID: 1389949398}
 --- !u!1001 &987072945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19041,9 +19024,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 983521156}
+      - m_Target: {fileID: 1382105255}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: MainMenu
+        m_MethodName: GoToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20476,10 +20459,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa83032423186948a0bf83536c25f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winnerpanel: {fileID: 0}
-  karaktercangostergesi: {fileID: 0}
-  pausebuton: {fileID: 0}
-  karakterhareketcanvas: {fileID: 0}
+  targetKillCount: 10
+  winnerPanel: {fileID: 983521152}
+  karakterCanGostergesi: {fileID: 22831632}
+  pauseButon: {fileID: 1861586238}
+  karakterHareketCanvas: {fileID: 1389949398}
 --- !u!4 &1382105256
 Transform:
   m_ObjectHideFlags: 0
@@ -30169,9 +30153,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 983521156}
+      - m_Target: {fileID: 1382105255}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
-        m_MethodName: NextLevel
+        m_MethodName: GoToNextLevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

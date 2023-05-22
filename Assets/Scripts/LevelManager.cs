@@ -3,52 +3,100 @@ using UnityEngine.SceneManagement;
     
 public class LevelManager : MonoBehaviour
 {
-    private int level = 1;
-    private int düþmanSayýsý = 0;
-    public GameObject winnerpanel;
-    
-    public GameObject karaktercangostergesi;
-    public GameObject pausebuton;
-    public GameObject karakterhareketcanvas;
+    /* private int level = 1;
+     public GameObject winnerPanel;
+     public GameObject karakterCanGostergesi;
+     public GameObject pauseButon;
+     public GameObject karakterHareketCanvas;
 
+
+
+     private void Start()
+     {
+         winnerPanel.SetActive(false);
+
+     }
+
+     public void DusmanOlduruldu()
+     {
+         LevelTamamlandiKontrolu(ZombiSaldýrý.destroyedEnemyCount);
+     }
+
+     private void LevelTamamlandiKontrolu(int dusmanSayisi)
+     {
+         if (dusmanSayisi >= 10)
+         {
+             winnerPanel.SetActive(true);
+             karakterCanGostergesi.SetActive(false);
+             karakterHareketCanvas.SetActive(false);
+             pauseButon.SetActive(false);
+             Debug.Log("Winner");
+             // "Winner" yazýsýný göster
+             // Main menü ve next level butonlarýný aktif hale getir
+         }
+     }
+
+     public void MainMenu()
+     {
+         SceneManager.LoadScene(0); // Panel sýralamasýndaki 0. yi getirir yani main menü panelini.
+     }
+
+     public void NextLevel()
+     {
+         level++; // Level'i bir artýrýn
+
+         string levelName = "Level" + level.ToString(); // Bir sonraki level'in sahne adýný oluþturun
+
+         SceneManager.LoadScene(levelName); // Bir sonraki level'in sahnesini yükleyin
+     }*/
+
+    public int targetKillCount = 20;
+    public GameObject winnerPanel;
+    public GameObject karakterCanGostergesi;
+    public GameObject pauseButon;
+    public GameObject karakterHareketCanvas;
 
     private void Start()
     {
-        winnerpanel.SetActive(false);
-      
-    }
- 
-    public void DüþmanÖldürüldü()
-    {
-        düþmanSayýsý++;
-     
-        LevelTamamlandýKontrolü();
-    }
+        winnerPanel.SetActive(false);
 
-    private void LevelTamamlandýKontrolü()
+    }
+    private void Update()
     {
-        if (düþmanSayýsý >= 10)
+        if (ZombiSaldýrý.destroyedEnemyCount >= targetKillCount)
         {
-            winnerpanel.SetActive(true);
-            karaktercangostergesi.SetActive(false);
-            karakterhareketcanvas.SetActive(false);
-            pausebuton.SetActive(false);
-            // "Winner" yazýsýný göster
-            // Main menü ve next level butonlarýný aktif hale getir
+            ShowWinnerPanel();
+            Time.timeScale = 0f;
+            Debug.Log("Winner");
         }
     }
 
-    public void MainMenu()
+    private void ShowWinnerPanel()
     {
-        SceneManager.LoadScene(0); // Panel sýralamasýndaki 0. yi getirir yani mainmenü panelini.
+        winnerPanel.SetActive(true);
+        karakterCanGostergesi.SetActive(false);
+        karakterHareketCanvas.SetActive(false);
+        pauseButon.SetActive(false);
     }
 
-    public void NextLevel()
+    public void GoToMainMenu()
     {
-        level++; // Level'i bir artýrýn
+        SceneManager.LoadScene(0); // Ana menü sahnesinin yüklenmesi için sahne indeksi 0 kullanýlýyor
+    }
 
-        string levelName = "Level" + level.ToString(); // Bir sonraki level'in sahne adýný oluþturun
+    public void GoToNextLevel()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int nextSceneIndex = currentSceneIndex + 1;
 
-        SceneManager.LoadScene(levelName); // Bir sonraki level'in sahnesini yükleyin
+        if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
+        {
+            SceneManager.LoadScene(nextSceneIndex);
+            Time.timeScale = 1f;
+        }
+        else
+        {
+            Debug.Log("There is no next level!"); // Son seviyedeyiz, bir sonraki seviye yok
+        }
     }
 }

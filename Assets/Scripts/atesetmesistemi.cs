@@ -18,6 +18,8 @@ public class atesetmesistemi : MonoBehaviour
     public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
     private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
 
+    
+
 
     private void Update()
     {
@@ -35,6 +37,7 @@ public class atesetmesistemi : MonoBehaviour
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             Shoot();
+            
         }
     }
 
@@ -57,10 +60,15 @@ public class atesetmesistemi : MonoBehaviour
             }
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
+            
+
         }
     }
 
    
+
+
+
 
 
 }

@@ -4,6 +4,8 @@ using UnityEngine.AI;
 public class ZombiSaldırı : MonoBehaviour
 {
     public int damageAmount = 10;
+
+    public static int destroyedEnemyCount = 0; //ölen zombi sayısı
     private void OnTriggerEnter(Collider other)
     {
         SağlıkDurumu healthController = other.GetComponent<SağlıkDurumu>();
@@ -112,8 +114,14 @@ public class ZombiSaldırı : MonoBehaviour
         if (canDestroy)
         {
             Destroy(gameObject);
+            EnemyDestroyed();
         }
 
+    }
+    public static void EnemyDestroyed()
+    {
+        destroyedEnemyCount++;
+        Debug.Log(destroyedEnemyCount);
     }
 }
 
