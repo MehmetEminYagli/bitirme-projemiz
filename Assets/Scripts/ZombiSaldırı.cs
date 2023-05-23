@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class ZombiSaldırı : MonoBehaviour
 {
+    public GameObject dropObjectPrefab; // altın prefeb getir.
     public int damageAmount = 10;
 
     public static int destroyedEnemyCount = 0; //ölen zombi sayısı
@@ -81,7 +82,12 @@ public class ZombiSaldırı : MonoBehaviour
         if (currentHealth <= 0f)
         {
             Die();
-        }
+            GameObject dropObject = Instantiate(dropObjectPrefab, transform.position, Quaternion.identity);
+            Rigidbody dropObjectRigidbody = dropObject.GetComponent<Rigidbody>();
+            dropObjectRigidbody.AddForce(new Vector3(0f, 5f, 0f), ForceMode.Impulse);
+        
+
+    }
     }
 
     void Die()
