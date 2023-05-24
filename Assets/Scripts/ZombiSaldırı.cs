@@ -1,10 +1,13 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
+using TMPro;
 public class ZombiSaldırı : MonoBehaviour
 {
     public GameObject dropObjectPrefab; // altın prefeb getir.
     public int damageAmount = 10;
+    public static int Score;
+    public TextMeshProUGUI PuanMetin;
 
     public static int destroyedEnemyCount = 0; //ölen zombi sayısı
     private void OnTriggerEnter(Collider other)
@@ -39,6 +42,7 @@ public class ZombiSaldırı : MonoBehaviour
 
     void Update()
     {
+        PuanMetin.text = Score.ToString();
         if (target == null)
             return;
 
@@ -82,6 +86,7 @@ public class ZombiSaldırı : MonoBehaviour
         if (currentHealth <= 0f)
         {
             Die();
+            Score += 5;
             GameObject dropObject = Instantiate(dropObjectPrefab, transform.position, Quaternion.identity);
             Rigidbody dropObjectRigidbody = dropObject.GetComponent<Rigidbody>();
             dropObjectRigidbody.AddForce(new Vector3(0f, 5f, 0f), ForceMode.Impulse);
