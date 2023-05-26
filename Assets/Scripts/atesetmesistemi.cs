@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class atesetmesistemi : MonoBehaviour
@@ -18,9 +20,6 @@ public class atesetmesistemi : MonoBehaviour
     public LayerMask enemyLayer; // düþmanlarýn bulunacaðý katman
     private Collider[] colliders; // çember içindeki colliderlarý depolamak için bir dizi
 
-    
-
-
     private void Update()
     {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, detectionRadius, enemyLayer);
@@ -32,22 +31,29 @@ public class atesetmesistemi : MonoBehaviour
             i++;
         }
 
-        
-        if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+        if (hitColliders.Length > 0) // Algýlanan düþman varsa
         {
-            nextTimeToFire = Time.time + 1f / fireRate;
-            Shoot();
-            
+            if (Input.GetButton("Fire1") && Time.time >= nextTimeToFire)
+            {
+                nextTimeToFire = Time.time + 1f / fireRate;
+                Shoot(hitColliders);
+            }
         }
     }
 
-    void Shoot()
+    void Shoot(Collider[] hitColliders)
     {
         muzzleFlash.Play();
 
         RaycastHit hit;
         if (Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
+            if (!hitColliders.Contains(hit.collider))
+            {
+                // Düþman algýlama yarýçapý içinde deðil, ateþ etmeyi tamamlamadan çýk
+                return;
+            }
+
             Debug.Log(hit.transform.name);
             ZombiSaldýrý enemy = hit.transform.GetComponent<ZombiSaldýrý>();
             if (enemy != null)
@@ -60,14 +66,8 @@ public class atesetmesistemi : MonoBehaviour
             }
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);
-            
-
         }
     }
-
-   
-
-
 
 
 
