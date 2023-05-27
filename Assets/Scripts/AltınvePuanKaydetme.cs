@@ -45,7 +45,7 @@ public class AltınvePuanKaydetme : MonoBehaviour
     private void UpdateHighScoreText()
     {
         highScoreText.text = "High Score: " + highScore.ToString();
-        scoreText.text = "Your Score: " + yourscore.ToString();
+        scoreText.text = "Score: " + yourscore.ToString();
     }
 }
 

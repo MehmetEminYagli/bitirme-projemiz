@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: "Assets/Scenes/MainMen\xFC.unity"
     guid: 5b8432a1b44cf9143aaae63ef0c6c928
   - enabled: 1
-    path: Assets/Scenes/level 1.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: Assets/Scenes/level1copy.unity
     guid: 9e35755a1c74cea4e883b1b3a65c7085
   - enabled: 1
@@ -20,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level 3.unity
     guid: e0007c6fe9e9f6d4faa775d261727fe8
+  - enabled: 1
+    path: Assets/Scenes/level 1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

@@ -69,6 +69,12 @@ public class LevelManager : MonoBehaviour
             Time.timeScale = 0f;
             Debug.Log("Winner");
         }
+        else
+        {
+            Time.timeScale = 1f;
+            
+        }
+            
     }
 
     private void ShowWinnerPanel()
@@ -91,8 +97,10 @@ public class LevelManager : MonoBehaviour
 
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(nextSceneIndex);
             Time.timeScale = 1f;
+            SceneManager.LoadScene(nextSceneIndex);
+            ZombiSaldýrý.destroyedEnemyCount = 0;
+
         }
         else
         {

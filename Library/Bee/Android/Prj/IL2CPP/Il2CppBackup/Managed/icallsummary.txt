@@ -161,7 +161,12 @@ UnityEngine.AndroidJNIHelper::get_debug
 UnityEngine.AndroidJNIHelper::set_debug
 UnityEngine.AnimationCurve::Internal_Equals
 UnityEngine.AnimationCurve::Internal_Create
+UnityEngine.AnimationCurve::Evaluate
 UnityEngine.AnimationCurve::Internal_Destroy
+UnityEngine.AnimationCurve::SetKeys
+UnityEngine.AnimationCurve::set_postWrapMode
+UnityEngine.AnimationCurve::set_preWrapMode
+UnityEngine.AnimationCurve::GetKeys
 UnityEngine.Animations.AnimationLayerMixerPlayable::SetSingleLayerOptimizationInternal
 UnityEngine.Animator::get_hasBoundPlayables
 UnityEngine.Animator::ResetTriggerString
@@ -171,6 +176,7 @@ UnityEngine.Application::get_isBatchMode
 UnityEngine.Application::get_isFocused
 UnityEngine.Application::get_isPlaying
 UnityEngine.Application::Quit
+UnityEngine.Application::set_targetFrameRate
 UnityEngine.Application::get_platform
 UnityEngine.AsyncOperation::InternalDestroy
 UnityEngine.AudioSettings::StartAudioOutput
@@ -188,8 +194,10 @@ UnityEngine.Camera::get_farClipPlane
 UnityEngine.Camera::get_nearClipPlane
 UnityEngine.Camera::ScreenPointToRay_Injected
 UnityEngine.Camera::ScreenToViewportPoint_Injected
+UnityEngine.Camera::ViewportToWorldPoint_Injected
 UnityEngine.Camera::WorldToScreenPoint_Injected
 UnityEngine.Camera::get_pixelRect_Injected
+UnityEngine.Camera::set_orthographicSize
 UnityEngine.Camera::get_current
 UnityEngine.Camera::get_main
 UnityEngine.Camera::get_clearFlags
@@ -213,6 +221,7 @@ UnityEngine.Canvas::set_referencePixelsPerUnit
 UnityEngine.Canvas::set_scaleFactor
 UnityEngine.Canvas::set_sortingLayerID
 UnityEngine.Canvas::set_sortingOrder
+UnityEngine.Canvas::set_worldCamera
 UnityEngine.Canvas::get_additionalShaderChannels
 UnityEngine.Canvas::get_worldCamera
 UnityEngine.Canvas::get_rootCanvas
@@ -330,6 +339,7 @@ UnityEngine.GameObject::GetComponentInChildren
 UnityEngine.GameObject::GetComponentInParent
 UnityEngine.GameObject::Internal_AddComponentWithType
 UnityEngine.GameObject::FindGameObjectWithTag
+UnityEngine.GameObject::FindGameObjectsWithTag
 UnityEngine.GameObject::get_transform
 UnityEngine.GL::Begin
 UnityEngine.GL::End
@@ -458,6 +468,7 @@ UnityEngine.Input::get_mousePosition_Injected
 UnityEngine.Input::get_mouseScrollDelta_Injected
 UnityEngine.Input::set_compositionCursorPos_Injected
 UnityEngine.Input::set_imeCompositionMode
+UnityEngine.Input::set_simulateMouseWithTouches
 UnityEngine.Input::get_imeCompositionMode
 UnityEngine.Light::get_useColorTemperature
 UnityEngine.Light::get_bounceIntensity
@@ -493,6 +504,7 @@ UnityEngine.Material::SetMatrixImpl_Injected
 UnityEngine.Material::SetShaderKeywords
 UnityEngine.Material::SetTextureImpl
 UnityEngine.Material::set_renderQueue
+UnityEngine.Material::set_shader
 UnityEngine.Material::GetTextureImpl
 UnityEngine.MaterialPropertyBlock::CreateImpl
 UnityEngine.MaterialPropertyBlock::Clear
@@ -581,16 +593,22 @@ UnityEngine.PlayerConnectionInternal::PollInternal
 UnityEngine.PlayerConnectionInternal::RegisterInternal
 UnityEngine.PlayerConnectionInternal::SendMessage
 UnityEngine.PlayerConnectionInternal::UnregisterInternal
+UnityEngine.PlayerPrefs::TrySetInt
+UnityEngine.PlayerPrefs::GetInt
+UnityEngine.PlayerPrefs::Save
 UnityEngine.PropertyNameUtils::PropertyNameFromString_Injected
+UnityEngine.QualitySettings::get_vSyncCount
 UnityEngine.QualitySettings::get_activeColorSpace
 UnityEngine.Quaternion::AngleAxis_Injected
 UnityEngine.Quaternion::FromToRotation_Injected
 UnityEngine.Quaternion::Internal_FromEulerRad_Injected
 UnityEngine.Quaternion::Internal_ToEulerRad_Injected
 UnityEngine.Quaternion::Inverse_Injected
+UnityEngine.Quaternion::Lerp_Injected
 UnityEngine.Quaternion::LookRotation_Injected
 UnityEngine.Random::RandomRangeInt
 UnityEngine.Random::Range
+UnityEngine.Random::InitState
 UnityEngine.RectOffset::get_bottom
 UnityEngine.RectOffset::get_horizontal
 UnityEngine.RectOffset::get_left
@@ -666,6 +684,7 @@ UnityEngine.SceneManagement.Scene::GetBuildIndexInternal
 UnityEngine.SceneManagement.SceneManager::get_sceneCount
 UnityEngine.SceneManagement.SceneManager::GetActiveScene_Injected
 UnityEngine.SceneManagement.SceneManager::GetSceneAt_Injected
+UnityEngine.SceneManagement.SceneManagerAPIInternal::GetNumScenesInBuildSettings
 UnityEngine.SceneManagement.SceneManagerAPIInternal::LoadSceneAsyncNameIndexInternal_Injected
 UnityEngine.Screen::get_fullScreen
 UnityEngine.Screen::get_height
@@ -728,6 +747,13 @@ UnityEngine.TextGenerator::GetLinesInternal
 UnityEngine.TextGenerator::GetVerticesInternal
 UnityEngine.TextGenerator::Internal_Destroy
 UnityEngine.TextGenerator::get_rectExtents_Injected
+UnityEngine.TextMesh::get_color_Injected
+UnityEngine.TextMesh::set_anchor
+UnityEngine.TextMesh::set_color_Injected
+UnityEngine.TextMesh::set_font
+UnityEngine.TextMesh::set_fontSize
+UnityEngine.TextMesh::set_text
+UnityEngine.TextMesh::get_font
 UnityEngine.Texture::get_isReadable
 UnityEngine.Texture::GetDataHeight
 UnityEngine.Texture::GetDataWidth
@@ -753,6 +779,7 @@ UnityEngine.Texture2DArray::get_isReadable
 UnityEngine.Texture3D::Internal_CreateImpl
 UnityEngine.Texture3D::get_isReadable
 UnityEngine.Time::get_deltaTime
+UnityEngine.Time::get_fixedDeltaTime
 UnityEngine.Time::get_realtimeSinceStartup
 UnityEngine.Time::get_time
 UnityEngine.Time::get_unscaledDeltaTime

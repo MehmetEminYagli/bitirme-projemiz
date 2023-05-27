@@ -8,7 +8,6 @@ public class ZombiSaldırı : MonoBehaviour
     public int damageAmount = 10;
     public static int Score;
     public TextMeshProUGUI PuanMetin;
-
     public static int destroyedEnemyCount = 0; //ölen zombi sayısı
     private void OnTriggerEnter(Collider other)
     {
@@ -26,7 +25,7 @@ public class ZombiSaldırı : MonoBehaviour
     public Animator animator; // Düşmanın Animator component'i
 
     [SerializeField] float currentHealth;
-    [SerializeField] ZombiCanBar HealthbarScript;                 // zombi can durumu bakma 
+    [SerializeField] ZombiCanBar HealthbarScript; // zombi can durumu bakma 
     [HideInInspector] public float enemymaxHealt = 20f;
 
     private bool canAttack = true; // Saldırı yapabilme durumu
@@ -45,7 +44,6 @@ public class ZombiSaldırı : MonoBehaviour
         PuanMetin.text = Score.ToString();
         if (target == null)
             return;
-
         float distance = Vector3.Distance(transform.position, target.position);
 
         // Saldırı mesafesinde değilse yürümeye devam et
@@ -53,7 +51,6 @@ public class ZombiSaldırı : MonoBehaviour
         {
             animator.SetBool("isWalking", true);
             animator.SetBool("isAttacking", false);
-
             transform.LookAt(target.position);
             transform.Translate(Vector3.forward * speed * Time.deltaTime, Space.Self);
         }
@@ -77,22 +74,30 @@ public class ZombiSaldırı : MonoBehaviour
         canAttack = true;
     }
 
-    
-
     public void TakeDamage(float amount)
     {
+        if (gameObject == null)
+        {
+            // Nesne yok edilmiş, işlem yapmayı durdur.
+            return;
+        }
+
         currentHealth -= amount;
         HealthbarScript.HealthBarProgress(currentHealth, enemymaxHealt);
         if (currentHealth <= 0f)
         {
             Die();
             Score += 5;
-            GameObject dropObject = Instantiate(dropObjectPrefab, transform.position, Quaternion.identity);
-            Rigidbody dropObjectRigidbody = dropObject.GetComponent<Rigidbody>();
-            dropObjectRigidbody.AddForce(new Vector3(0f, 5f, 0f), ForceMode.Impulse);
-        
-
-    }
+            if (dropObjectPrefab != null)
+            {
+                GameObject dropObject = Instantiate(dropObjectPrefab, transform.position, Quaternion.identity);
+                Rigidbody dropObjectRigidbody = dropObject.GetComponent<Rigidbody>();
+                if (dropObjectRigidbody != null)
+                {
+                    dropObjectRigidbody.AddForce(new Vector3(0f, 5f, 0f), ForceMode.Impulse);
+                }
+            }
+        }
     }
 
     void Die()
@@ -102,6 +107,7 @@ public class ZombiSaldırı : MonoBehaviour
         if (anim != null)
         {
             Destroy(anim);
+           
         }
 
         // Tüm bileşenlerin destroy edilip edilmediğini kontrol et
@@ -134,8 +140,4 @@ public class ZombiSaldırı : MonoBehaviour
         destroyedEnemyCount++;
         Debug.Log(destroyedEnemyCount);
     }
-}
-
-internal class HealthBar
-{
 }

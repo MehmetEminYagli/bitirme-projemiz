@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 public class gecensure : MonoBehaviour
 {
-    float kronometre = 0f;
+    public float kronometre = 0f;
     public TextMeshProUGUI kronometretext;
     int dakika = 0;
     int saniye = 0;
@@ -16,7 +16,7 @@ public class gecensure : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        kronometre += Time.deltaTime;
+        kronometre -= Time.deltaTime;
         saniye = (int)(kronometre % 60); // Saniyeyi hesapla
         dakika = (int)(kronometre / 60); // Dakikayý hesapla
 
