@@ -63,7 +63,7 @@ public class EnemySpawn : MonoBehaviour
          return position;
      }*/
 
-    public GameObject enemyPrefab;
+   /* public GameObject enemyPrefab;
     public int maxEnemies;
     public float spawnDelay;
     public float spawnRange = 15f;
@@ -107,5 +107,67 @@ public class EnemySpawn : MonoBehaviour
         position.x = Mathf.Clamp(position.x, minX, maxX);
         position.z = Mathf.Clamp(position.z, minZ, maxZ);
         return position;
+    }*/
+
+
+
+
+
+    public GameObject enemyPrefab;
+    public int maxEnemies = 10;
+    public float spawnDelay = 1f;
+    public float spawnRange = 15f;
+    public float mapBoundary = 20f;
+
+    private int spawnedEnemies = 0;
+
+    private void Start()
+    {
+        Camera.main.transform.position = new Vector3(0f, 10f, 0f);
+        Camera.main.transform.rotation = Quaternion.Euler(60f, 45f, 0f);
+
+        InvokeRepeating("SpawnEnemy", spawnDelay, spawnDelay);
+    }
+
+    private void SpawnEnemy()
+    {
+        if (spawnedEnemies >= maxEnemies)
+        {
+            CancelInvoke("SpawnEnemy");
+            return;
+        }
+
+        float playerY = transform.position.y;
+        Vector3 spawnPosition = GetRandomSpawnPosition(playerY);
+        spawnPosition = ClampPositionToMap(spawnPosition);
+
+        GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        enemyObject.transform.localScale = new Vector3(1f, 1f, 1f);
+        enemyObject.GetComponent<Rigidbody>().useGravity = true;
+
+        spawnedEnemies++;
+    }
+
+    private Vector3 GetRandomSpawnPosition(float playerY)
+    {
+        float randomX = Random.Range(-spawnRange, spawnRange);
+        float randomZ = Random.Range(-spawnRange, spawnRange);
+
+        Vector3 spawnPosition = new Vector3(randomX, playerY, randomZ);
+        return spawnPosition;
+    }
+
+    private Vector3 ClampPositionToMap(Vector3 position)
+    {
+        float minX = -mapBoundary;
+        float maxX = mapBoundary;
+        float minZ = -mapBoundary;
+        float maxZ = mapBoundary;
+
+        position.x = Mathf.Clamp(position.x, minX, maxX);
+        position.z = Mathf.Clamp(position.z, minZ, maxZ);
+
+        return position;
     }
 }
+

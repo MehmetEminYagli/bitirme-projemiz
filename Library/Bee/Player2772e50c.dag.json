@@ -723,8 +723,7 @@
         715,
         716,
         717,
-        718,
-        719
+        718
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -13350,20 +13349,6 @@
       "DebugActionIndex": 625
     },
     {
-      "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/Bee/artifacts/Android/ManagedStripped/icallsummary.txt"
-      ],
-      "Outputs": [
-        "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/icallsummary.txt"
-      ],
-      "ToBuildDependencies": [
-        5
-      ],
-      "DebugActionIndex": 626
-    },
-    {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Mono.Security.dll",
       "ActionType": "CopyFiles",
       "Inputs": [
@@ -13375,7 +13360,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 627
+      "DebugActionIndex": 626
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/mscorlib.dll",
@@ -13389,7 +13374,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 628
+      "DebugActionIndex": 627
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Configuration.dll",
@@ -13403,7 +13388,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 629
+      "DebugActionIndex": 628
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Core.dll",
@@ -13417,7 +13402,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 630
+      "DebugActionIndex": 629
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.dll",
@@ -13431,7 +13416,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 631
+      "DebugActionIndex": 630
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/System.Xml.dll",
@@ -13445,7 +13430,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 632
+      "DebugActionIndex": 631
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.dll",
@@ -13459,7 +13444,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 633
+      "DebugActionIndex": 632
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/Unity.TextMeshPro.pdb",
@@ -13473,7 +13458,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 634
+      "DebugActionIndex": 633
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.dll",
@@ -13487,7 +13472,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 635
+      "DebugActionIndex": 634
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AIModule.pdb",
@@ -13501,7 +13486,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 636
+      "DebugActionIndex": 635
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -13515,7 +13500,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 637
+      "DebugActionIndex": 636
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -13529,7 +13514,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 638
+      "DebugActionIndex": 637
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.dll",
@@ -13543,7 +13528,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 639
+      "DebugActionIndex": 638
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AnimationModule.pdb",
@@ -13557,7 +13542,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 640
+      "DebugActionIndex": 639
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.dll",
@@ -13571,7 +13556,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 641
+      "DebugActionIndex": 640
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.AudioModule.pdb",
@@ -13585,7 +13570,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 642
+      "DebugActionIndex": 641
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.dll",
@@ -13599,7 +13584,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 643
+      "DebugActionIndex": 642
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.CoreModule.pdb",
@@ -13613,7 +13598,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 644
+      "DebugActionIndex": 643
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.dll",
@@ -13627,7 +13612,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 645
+      "DebugActionIndex": 644
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.dll",
@@ -13641,7 +13626,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 646
+      "DebugActionIndex": 645
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.GridModule.pdb",
@@ -13655,7 +13640,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 647
+      "DebugActionIndex": 646
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.dll",
@@ -13669,7 +13654,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 648
+      "DebugActionIndex": 647
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.IMGUIModule.pdb",
@@ -13683,7 +13668,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 649
+      "DebugActionIndex": 648
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.dll",
@@ -13697,7 +13682,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 650
+      "DebugActionIndex": 649
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -13711,7 +13696,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 651
+      "DebugActionIndex": 650
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -13725,7 +13710,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 652
+      "DebugActionIndex": 651
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -13739,7 +13724,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 653
+      "DebugActionIndex": 652
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.pdb",
@@ -13753,7 +13738,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 654
+      "DebugActionIndex": 653
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.dll",
@@ -13767,7 +13752,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 655
+      "DebugActionIndex": 654
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.Physics2DModule.pdb",
@@ -13781,7 +13766,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 656
+      "DebugActionIndex": 655
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.dll",
@@ -13795,7 +13780,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 657
+      "DebugActionIndex": 656
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.PhysicsModule.pdb",
@@ -13809,7 +13794,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 658
+      "DebugActionIndex": 657
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -13823,7 +13808,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 659
+      "DebugActionIndex": 658
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -13837,7 +13822,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 660
+      "DebugActionIndex": 659
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -13851,7 +13836,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 661
+      "DebugActionIndex": 660
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -13865,7 +13850,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 662
+      "DebugActionIndex": 661
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -13879,7 +13864,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 663
+      "DebugActionIndex": 662
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -13893,7 +13878,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 664
+      "DebugActionIndex": 663
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -13907,7 +13892,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 665
+      "DebugActionIndex": 664
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -13921,7 +13906,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 666
+      "DebugActionIndex": 665
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.dll",
@@ -13935,7 +13920,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 667
+      "DebugActionIndex": 666
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -13949,7 +13934,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 668
+      "DebugActionIndex": 667
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.dll",
@@ -13963,7 +13948,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 669
+      "DebugActionIndex": 668
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.TilemapModule.pdb",
@@ -13977,7 +13962,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 670
+      "DebugActionIndex": 669
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.dll",
@@ -13991,7 +13976,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 671
+      "DebugActionIndex": 670
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UI.pdb",
@@ -14005,7 +13990,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 672
+      "DebugActionIndex": 671
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.dll",
@@ -14019,7 +14004,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 673
+      "DebugActionIndex": 672
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsModule.pdb",
@@ -14033,7 +14018,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 674
+      "DebugActionIndex": 673
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsNativeModule.dll",
@@ -14047,7 +14032,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 675
+      "DebugActionIndex": 674
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIElementsNativeModule.pdb",
@@ -14061,7 +14046,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 676
+      "DebugActionIndex": 675
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.dll",
@@ -14075,7 +14060,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 677
+      "DebugActionIndex": 676
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityEngine.UIModule.pdb",
@@ -14089,7 +14074,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 678
+      "DebugActionIndex": 677
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Il2CppBackup/Managed/UnityLinkerToEditorData.json",
@@ -14103,7 +14088,7 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 679
+      "DebugActionIndex": 678
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity default resources",
@@ -14114,18 +14099,18 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity default resources"
       ],
-      "DebugActionIndex": 680
+      "DebugActionIndex": 679
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/build.gradle_lmr9.info",
       "ActionType": "WriteTextFile",
-      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle\",\"Architectures\":\"ARM64\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"AppBundle\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"D:\\\\editor\\\\2021.3.19f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"GradleVersion\":\"6.1.1\",\"UnityLibraryTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":33,\"MinSDKVersion\":25,\"PackageName\":\"com.bmtgame.Bitirmeprj\",\"Architectures\":\"ARM64\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":5,\"VersionName\":\"0.32\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":true,\"KeystorePath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/bitirmeprjkey.keystore\",\"KeystoreName\":\"bitirmeprjkey.keystore\",\"KeystorePassword\":\"memo1153\",\"KeystoreAliasName\":\"bmt\",\"KeystoreAliasPassword\":\"memo1153\",\"ScriptingImplementation\":\"IL2CPP\",\"AndroidLibraries\":[],\"AARFiles\":[],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"D:\\\\editor\\\\2021.3.19f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle.properties\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/local.properties\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle/wrapper/gradle-wrapper.properties\"],\"inputs\":[\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
+      "WriteTextFilePayload": "{\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles+Arguments\":{\"ProjectPath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle\",\"Architectures\":\"ARM64\",\"BuildSystem\":\"Gradle\",\"GradleProjectCreateInfo\":{\"HostPlatform\":\"Windows\",\"ApplicationType\":\"AppBundle\",\"BuildType\":\"Release\",\"AndroidSDKPath\":\"D:\\\\editor\\\\2021.3.19f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\SDK\",\"AndroidNDKPath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/NDK\",\"PreferredHeapSizeForJVM\":4096,\"GradleVersion\":\"6.1.1\",\"UnityLibraryTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\mainTemplate.gradle\",\"LauncherTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\launcherTemplate.gradle\",\"BaseProjectTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\baseProjectTemplate.gradle\",\"GradlePropertiesTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\gradleTemplate.properties\",\"GradleLibraryTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\libTemplate.gradle\",\"ProguardUserPath\":\"\",\"SettingsTemplatePath\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\\\\GradleTemplates\\\\settingsTemplate.gradle\",\"BuildTools\":\"30.0.2\",\"TargetSDKVersion\":33,\"MinSDKVersion\":25,\"PackageName\":\"com.bmtgame.Bitirmeprj\",\"Architectures\":\"ARM64\",\"BuildApkPerCpuArchitecture\":false,\"VersionCode\":6,\"VersionName\":\"0.333\",\"Minify\":0,\"NoCompressOptions\":{\"RelativeFilePaths\":[],\"FileExtensions\":[]},\"UseCustomKeystore\":true,\"KeystorePath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/bitirmeprjkey.keystore\",\"KeystoreName\":\"bitirmeprjkey.keystore\",\"KeystorePassword\":\"memo1153\",\"KeystoreAliasName\":\"bmt\",\"KeystoreAliasPassword\":\"memo1153\",\"ScriptingImplementation\":\"IL2CPP\",\"AndroidLibraries\":[],\"AARFiles\":[],\"BuiltinJavaSourcePaths\":[\"com/unity3d/player/UnityPlayerActivity.java\"],\"JavaSourcePaths\":[],\"KotlinSourcePaths\":[],\"PlayerPackage\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer\",\"PlayerPackageTools\":\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools\",\"SymlinkSources\":false,\"InstallIntoBuildsFolder\":false,\"UnityPath\":\"\",\"UnityProjectPath\":\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz\",\"Dependencies\":[]}},\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"AndroidPlayerBuildProgram.Actions.ActionGenerateProjectFiles\",\"methodName\":\"Run\",\"assemblyLocation\":\"D:\\\\editor\\\\2021.3.19f1\\\\Editor\\\\Data\\\\PlaybackEngines\\\\AndroidPlayer\\\\AndroidPlayerBuildProgram.exe\",\"targets\":[\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/build.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle.properties\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/local.properties\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/settings.gradle\",\"C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle/wrapper/gradle-wrapper.properties\"],\"inputs\":[\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/mainTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/launcherTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/baseProjectTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/gradleTemplate.properties\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/libTemplate.gradle\",\"D:/editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/Tools/GradleTemplates/settingsTemplate.gradle\"],\"targetDirectories\":[]}}",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/build.gradle_lmr9.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 681
+      "DebugActionIndex": 680
     },
     {
       "Annotation": "ActionGenerateProjectFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/build.gradle (+6 others)",
@@ -14156,11 +14141,11 @@
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/gradle/wrapper/gradle-wrapper.properties"
       ],
       "ToBuildDependencies": [
-        681
+        680
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 682
+      "DebugActionIndex": 681
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/proguard-unity.txt",
@@ -14171,7 +14156,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/proguard-unity.txt"
       ],
-      "DebugActionIndex": 683
+      "DebugActionIndex": 682
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java",
@@ -14182,7 +14167,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/java/com/unity3d/player/UnityPlayerActivity.java"
       ],
-      "DebugActionIndex": 684
+      "DebugActionIndex": 683
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar",
@@ -14193,7 +14178,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/libs/unity-classes.jar"
       ],
-      "DebugActionIndex": 685
+      "DebugActionIndex": 684
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/ids.xml",
@@ -14204,7 +14189,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/ids.xml"
       ],
-      "DebugActionIndex": 686
+      "DebugActionIndex": 685
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/styles.xml",
@@ -14215,7 +14200,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/styles.xml"
       ],
-      "DebugActionIndex": 687
+      "DebugActionIndex": 686
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v21/styles.xml",
@@ -14226,7 +14211,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v21/styles.xml"
       ],
-      "DebugActionIndex": 688
+      "DebugActionIndex": 687
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v28/styles.xml",
@@ -14237,7 +14222,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values-v28/styles.xml"
       ],
-      "DebugActionIndex": 689
+      "DebugActionIndex": 688
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml",
@@ -14248,7 +14233,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/styles.xml"
       ],
-      "DebugActionIndex": 690
+      "DebugActionIndex": 689
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml",
@@ -14259,7 +14244,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v21/styles.xml"
       ],
-      "DebugActionIndex": 691
+      "DebugActionIndex": 690
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml",
@@ -14270,7 +14255,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v28/styles.xml"
       ],
-      "DebugActionIndex": 692
+      "DebugActionIndex": 691
     },
     {
       "Annotation": "WriteText C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml",
@@ -14281,7 +14266,7 @@
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/values/strings.xml"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 693
+      "DebugActionIndex": 692
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/freeformwindow.xml",
@@ -14292,7 +14277,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values/freeformwindow.xml"
       ],
-      "DebugActionIndex": 694
+      "DebugActionIndex": 693
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v30/freeformwindow.xml",
@@ -14303,7 +14288,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/res/values-v30/freeformwindow.xml"
       ],
-      "DebugActionIndex": 695
+      "DebugActionIndex": 694
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml",
@@ -14314,7 +14299,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon.xml"
       ],
-      "DebugActionIndex": 696
+      "DebugActionIndex": 695
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml",
@@ -14325,7 +14310,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-anydpi-v26/app_icon_round.xml"
       ],
-      "DebugActionIndex": 697
+      "DebugActionIndex": 696
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png",
@@ -14336,7 +14321,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/app_icon.png"
       ],
-      "DebugActionIndex": 698
+      "DebugActionIndex": 697
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png",
@@ -14347,7 +14332,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_background.png"
       ],
-      "DebugActionIndex": 699
+      "DebugActionIndex": 698
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png",
@@ -14358,7 +14343,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/launcher/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
       ],
-      "DebugActionIndex": 700
+      "DebugActionIndex": 699
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so",
@@ -14369,7 +14354,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libmain.so"
       ],
-      "DebugActionIndex": 701
+      "DebugActionIndex": 700
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info",
@@ -14380,7 +14365,7 @@
         "Library/Bee/artifacts/csharpactions/LauncherManifestDiag.txt_zvqu.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 702
+      "DebugActionIndex": 701
     },
     {
       "Annotation": "Generate Manifests Library/Bee/artifacts/Android/Manifest/LauncherManifestDiag.txt (+3 others)",
@@ -14464,11 +14449,11 @@
         62,
         64,
         66,
-        702
+        701
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 703
+      "DebugActionIndex": 702
     },
     {
       "Annotation": "ClassRegistrationGenerator C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/artifacts/Android/il2cppOutput/UnityClassRegistration.cpp",
@@ -14486,7 +14471,7 @@
         5
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 704
+      "DebugActionIndex": 703
     },
     {
       "Annotation": "Compile UnityClassRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o",
@@ -14500,10 +14485,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityClassRegistration.o"
       ],
       "ToBuildDependencies": [
-        704
+        703
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 705
+      "DebugActionIndex": 704
     },
     {
       "Annotation": "ICallRegistrationGenerator C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/artifacts/Android/il2cppOutput/UnityICallRegistration.cpp",
@@ -14538,7 +14523,7 @@
         5
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 706
+      "DebugActionIndex": 705
     },
     {
       "Annotation": "Compile UnityICallRegistration Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o",
@@ -14552,10 +14537,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/UnityICallRegistration.o"
       ],
       "ToBuildDependencies": [
-        706
+        705
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 707
+      "DebugActionIndex": 706
     },
     {
       "Annotation": "Link libunity Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so",
@@ -14572,11 +14557,11 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        705,
-        707
+        704,
+        706
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 708
+      "DebugActionIndex": 707
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so",
@@ -14589,10 +14574,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so"
       ],
       "ToBuildDependencies": [
-        708
+        707
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 709
+      "DebugActionIndex": 708
     },
     {
       "Annotation": "Generate Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so from Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.dbg.so Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so",
@@ -14605,10 +14590,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/libunity.sym.so"
       ],
       "ToBuildDependencies": [
-        709
+        708
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 710
+      "DebugActionIndex": 709
     },
     {
       "Annotation": "Stripping Library/Bee/artifacts/Android/libunity/arm64-v8a/unstripped/libunity.so -> Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so",
@@ -14621,10 +14606,10 @@
         "Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so"
       ],
       "ToBuildDependencies": [
-        708
+        707
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 711
+      "DebugActionIndex": 710
     },
     {
       "Annotation": "Adding note Library/Bee/artifacts/Android/libunity/arm64-v8a/stripped/libunity.so -> C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so",
@@ -14639,11 +14624,11 @@
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/jniLibs/arm64-v8a/libunity.so"
       ],
       "ToBuildDependencies": [
-        710,
-        711
+        709,
+        710
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 712
+      "DebugActionIndex": 711
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so",
@@ -14654,7 +14639,7 @@
       "Outputs": [
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libmain.so"
       ],
-      "DebugActionIndex": 713
+      "DebugActionIndex": 712
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libil2cpp.so",
@@ -14668,7 +14653,7 @@
       "ToBuildDependencies": [
         446
       ],
-      "DebugActionIndex": 714
+      "DebugActionIndex": 713
     },
     {
       "Annotation": "CopyFiles C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so",
@@ -14680,9 +14665,9 @@
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/symbols/arm64-v8a/libunity.so"
       ],
       "ToBuildDependencies": [
-        710
+        709
       ],
-      "DebugActionIndex": 715
+      "DebugActionIndex": 714
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/unity_app_guid_m16f.info",
@@ -14693,7 +14678,7 @@
         "Library/Bee/artifacts/csharpactions/unity_app_guid_m16f.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 716
+      "DebugActionIndex": 715
     },
     {
       "Annotation": "GuidGenerator C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/assets/bin/Data/unity_app_guid",
@@ -14720,11 +14705,11 @@
       ],
       "ToBuildDependencies": [
         67,
-        716
+        715
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 717
+      "DebugActionIndex": 716
     },
     {
       "Annotation": "WriteText C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint",
@@ -14735,7 +14720,7 @@
         "C:/Users/MehmetEmin/Desktop/bitirmedeneme/bitirme-projemiz/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/resources/META-INF/com.android.games.engine.build_fingerprint"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 718
+      "DebugActionIndex": 717
     },
     {
       "Annotation": "Player",
@@ -15006,7 +14991,7 @@
         677,
         678,
         679,
-        680,
+        681,
         682,
         683,
         684,
@@ -15026,14 +15011,13 @@
         698,
         699,
         700,
-        701,
-        703,
-        712,
-        717,
-        718
+        702,
+        711,
+        716,
+        717
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 719
+      "DebugActionIndex": 718
     }
   ],
   "FileSignatures": [
@@ -15556,7 +15540,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 719
+          "Player": 718
         }
 ,  "DefaultNodes": [
     0
