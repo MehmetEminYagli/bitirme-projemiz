@@ -2702,10 +2702,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Random_Range();
 		Register_UnityEngine_Random_Range();
 
-		//System.Void UnityEngine.Random::InitState(System.Int32)
-		void Register_UnityEngine_Random_InitState();
-		Register_UnityEngine_Random_InitState();
-
 	//End Registrations for type : UnityEngine.Random
 
 	//Start Registrations for type : UnityEngine.RectOffset

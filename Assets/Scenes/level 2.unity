@@ -5265,7 +5265,8 @@ MonoBehaviour:
   maxEnemies: 50
   spawnDelay: 2
   spawnRange: 2
-  mapBoundary: 1
+  mapBoundary: 35
+  spawnAreaSize: {x: 10, y: 10}
 --- !u!4 &369486400
 Transform:
   m_ObjectHideFlags: 0
@@ -5273,13 +5274,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 369486398}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.45, y: -36.48, z: -4.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1019.133, y: -1705.5095, z: -6.9659443}
+  m_LocalScale: {x: 1.7115341, y: 1.7115341, z: 1.7115341}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1180697545}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &377886983
 GameObject:
@@ -6513,7 +6514,7 @@ RectTransform:
   - {fileID: 1598566955}
   - {fileID: 1258858783}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7707,7 +7708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fa83032423186948a0bf83536c25f6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetKillCount: 2
+  targetKillCount: 60
   winnerPanel: {fileID: 760357857}
   karakterCanGostergesi: {fileID: 1094191470}
   pauseButon: {fileID: 650220108}
@@ -8947,7 +8948,8 @@ MonoBehaviour:
   maxEnemies: 20
   spawnDelay: 6
   spawnRange: 1
-  mapBoundary: 2
+  mapBoundary: 35
+  spawnAreaSize: {x: 10, y: 10}
 --- !u!4 &903340357
 Transform:
   m_ObjectHideFlags: 0
@@ -8955,13 +8957,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 903340355}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -57.17, y: -36.48, z: -4.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1022.07684, y: -1705.5095, z: -6.9659443}
+  m_LocalScale: {x: 1.7115341, y: 1.7115341, z: 1.7115341}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1180697545}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &904685336
 PrefabInstance:
@@ -11539,6 +11541,9 @@ RectTransform:
   - {fileID: 960686031}
   - {fileID: 1004381507}
   - {fileID: 405304930}
+  - {fileID: 369486400}
+  - {fileID: 1405756316}
+  - {fileID: 903340357}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13866,7 +13871,8 @@ MonoBehaviour:
   maxEnemies: 60
   spawnDelay: 4
   spawnRange: 15
-  mapBoundary: 8
+  mapBoundary: 35
+  spawnAreaSize: {x: 10, y: 10}
 --- !u!4 &1405756316
 Transform:
   m_ObjectHideFlags: 0
@@ -13874,13 +13880,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405756314}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -55.39, y: -35.44, z: 0.4923402}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1019.03033, y: -1703.7295, z: 0.8426571}
+  m_LocalScale: {x: 1.7115341, y: 1.7115341, z: 1.7115341}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 1180697545}
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1419662839
 PrefabInstance:
@@ -32622,7 +32628,7 @@ RectTransform:
   m_Children:
   - {fileID: 760357858}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

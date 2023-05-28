@@ -31,8 +31,10 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -165,6 +167,30 @@ ScriptsOnlyBuild:
     methodName: TryAgain
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
+    methodName: PauseGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: QuitGame
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: BacktoMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
+    methodName: ResumeGame
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: GoToNextLevel
+  - assembly: Assembly-CSharp
+    fullTypeName: LevelManager
+    methodName: GoToMainMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: BacktoMenu
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOver
+    methodName: TryAgain
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseMenu
     methodName: QuitGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseMenu
@@ -197,11 +223,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1576}
-    - Class: 114
-      Script: {instanceID: 1578}
     - Class: 114
       Script: {instanceID: 2202}
     - Class: 114
@@ -282,11 +308,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1576}
-    - Class: 114
-      Script: {instanceID: 1578}
     - Class: 114
       Script: {instanceID: 2110}
     - Class: 114
@@ -395,11 +421,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1576}
-    - Class: 114
-      Script: {instanceID: 1578}
     - Class: 114
       Script: {instanceID: 1742}
     - Class: 114
@@ -524,9 +550,13 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1576}
+    - Class: 114
+      Script: {instanceID: 1742}
     - Class: 114
       Script: {instanceID: 2110}
     - Class: 114
@@ -534,26 +564,56 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2618}
     - Class: 114
+      Script: {instanceID: 2626}
+    - Class: 114
+      Script: {instanceID: 3078}
+    - Class: 114
       Script: {instanceID: 3650}
     - Class: 114
       Script: {instanceID: 3670}
     - Class: 114
       Script: {instanceID: 3708}
     - Class: 114
+      Script: {instanceID: 3872}
+    - Class: 114
+      Script: {instanceID: 3894}
+    - Class: 114
+      Script: {instanceID: 4036}
+    - Class: 114
+      Script: {instanceID: 4262}
+    - Class: 114
+      Script: {instanceID: 4930}
+    - Class: 114
       Script: {instanceID: 4980}
+    - Class: 114
+      Script: {instanceID: 5060}
     - Class: 114
       Script: {instanceID: 5484}
     - Class: 114
       Script: {instanceID: 5604}
     - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
       Script: {instanceID: 6064}
+    - Class: 114
+      Script: {instanceID: 6072}
+    - Class: 114
+      Script: {instanceID: 6386}
+    - Class: 114
+      Script: {instanceID: 6588}
     - Class: 114
       Script: {instanceID: 6596}
     - Class: 114
+      Script: {instanceID: 6888}
+    - Class: 114
       Script: {instanceID: 7106}
+    - Class: 114
+      Script: {instanceID: 7110}
     - Class: 114
       Script: {instanceID: 7334}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -621,11 +681,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1572}
+    - Class: 114
       Script: {instanceID: 1574}
     - Class: 114
       Script: {instanceID: 1576}
-    - Class: 114
-      Script: {instanceID: 1578}
     - Class: 114
       Script: {instanceID: 1742}
     - Class: 114
@@ -1115,7 +1175,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 6b1e8b335335dcc4ac3ec908bf1555dd
+      Hash: 202fad5bea49b464f934bacad5cdb7db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnemySpawn
@@ -1511,7 +1571,7 @@ ScriptsOnlyBuild:
     className: WFX_LightFlicker
   - hash:
       serializedVersion: 2
-      Hash: 6b1e8b335335dcc4ac3ec908bf1555dd
+      Hash: 202fad5bea49b464f934bacad5cdb7db
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: biozombiespawn
@@ -1912,4 +1972,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/level 2.unity
   - Assets/Scenes/level 3.unity
   - Assets/Scenes/level 1.unity
-  playerPath: D:/a/bitirmeprj/bitirmeprjalpha6.aab
+  playerPath: D:/a/bitirmeprj/bitirmeprjalpha9.aab

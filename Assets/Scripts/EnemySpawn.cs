@@ -63,61 +63,58 @@ public class EnemySpawn : MonoBehaviour
          return position;
      }*/
 
-   /* public GameObject enemyPrefab;
-    public int maxEnemies;
-    public float spawnDelay;
-    public float spawnRange = 15f;
-    private int spawnedEnemies = 0;
-    public float mapBoundary = 20f;
+    /* public GameObject enemyPrefab;
+     public int maxEnemies;
+     public float spawnDelay;
+     public float spawnRange = 15f;
+     private int spawnedEnemies = 0;
+     public float mapBoundary = 20f;
 
-    private void Start()
-    {
-        Camera.main.transform.position = new Vector3(0f, 10f, 0f);
-        Camera.main.transform.rotation = Quaternion.Euler(60f, 45f, 0f);
-        StartCoroutine(SpawnEnemies());
-    }
+     private void Start()
+     {
+         Camera.main.transform.position = new Vector3(0f, 10f, 0f);
+         Camera.main.transform.rotation = Quaternion.Euler(60f, 45f, 0f);
+         StartCoroutine(SpawnEnemies());
+     }
 
-    private IEnumerator SpawnEnemies()
-    {
-        while (spawnedEnemies < maxEnemies)
-        {
-            yield return new WaitForSeconds(spawnDelay);
-            float playerY = transform.position.y;
+     private IEnumerator SpawnEnemies()
+     {
+         while (spawnedEnemies < maxEnemies)
+         {
+             yield return new WaitForSeconds(spawnDelay);
+             float playerY = transform.position.y;
 
-            // Seed deðerini güncelle
-            int seed = (int)(Time.time * 1000);
-            Random.InitState(seed);
+             // Seed deðerini güncelle
+             int seed = (int)(Time.time * 1000);
+             Random.InitState(seed);
 
-            Vector3 spawnPosition = new Vector3(Random.Range(-spawnRange, spawnRange), playerY, Random.Range(-spawnRange, spawnRange));
-            spawnPosition = ClampPositionToMap(spawnPosition);
-            GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
-            enemyObject.transform.localScale = new Vector3(1f, 1f, 1f);
-            enemyObject.GetComponent<Rigidbody>().useGravity = true;
-            spawnedEnemies++;
-        }
-        StopCoroutine(SpawnEnemies());
-    }
+             Vector3 spawnPosition = new Vector3(Random.Range(-spawnRange, spawnRange), playerY, Random.Range(-spawnRange, spawnRange));
+             spawnPosition = ClampPositionToMap(spawnPosition);
+             GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+             enemyObject.transform.localScale = new Vector3(1f, 1f, 1f);
+             enemyObject.GetComponent<Rigidbody>().useGravity = true;
+             spawnedEnemies++;
+         }
+         StopCoroutine(SpawnEnemies());
+     }
 
-    private Vector3 ClampPositionToMap(Vector3 position)
-    {
-        float minX = -mapBoundary;
-        float maxX = mapBoundary;
-        float minZ = -mapBoundary;
-        float maxZ = mapBoundary;
-        position.x = Mathf.Clamp(position.x, minX, maxX);
-        position.z = Mathf.Clamp(position.z, minZ, maxZ);
-        return position;
-    }*/
-
-
-
-
+     private Vector3 ClampPositionToMap(Vector3 position)
+     {
+         float minX = -mapBoundary;
+         float maxX = mapBoundary;
+         float minZ = -mapBoundary;
+         float maxZ = mapBoundary;
+         position.x = Mathf.Clamp(position.x, minX, maxX);
+         position.z = Mathf.Clamp(position.z, minZ, maxZ);
+         return position;
+     }*/
 
     public GameObject enemyPrefab;
     public int maxEnemies = 10;
     public float spawnDelay = 1f;
     public float spawnRange = 15f;
     public float mapBoundary = 20f;
+    public Vector2 spawnAreaSize = new Vector2(10f, 10f);
 
     private int spawnedEnemies = 0;
 
@@ -137,8 +134,7 @@ public class EnemySpawn : MonoBehaviour
             return;
         }
 
-        float playerY = transform.position.y;
-        Vector3 spawnPosition = GetRandomSpawnPosition(playerY);
+        Vector3 spawnPosition = GetRandomSpawnPosition();
         spawnPosition = ClampPositionToMap(spawnPosition);
 
         GameObject enemyObject = Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
@@ -148,21 +144,24 @@ public class EnemySpawn : MonoBehaviour
         spawnedEnemies++;
     }
 
-    private Vector3 GetRandomSpawnPosition(float playerY)
+    private Vector3 GetRandomSpawnPosition()
     {
-        float randomX = Random.Range(-spawnRange, spawnRange);
-        float randomZ = Random.Range(-spawnRange, spawnRange);
+        float halfWidth = spawnAreaSize.x / 2f;
+        float halfHeight = spawnAreaSize.y / 2f;
 
-        Vector3 spawnPosition = new Vector3(randomX, playerY, randomZ);
+        float randomX = Random.Range(-halfWidth, halfWidth);
+        float randomZ = Random.Range(-halfHeight, halfHeight);
+
+        Vector3 spawnPosition = new Vector3(randomX, 0f, randomZ) + transform.position;
         return spawnPosition;
     }
 
     private Vector3 ClampPositionToMap(Vector3 position)
     {
-        float minX = -mapBoundary;
-        float maxX = mapBoundary;
-        float minZ = -mapBoundary;
-        float maxZ = mapBoundary;
+        float minX = -mapBoundary + spawnRange;
+        float maxX = mapBoundary - spawnRange;
+        float minZ = -mapBoundary + spawnRange;
+        float maxZ = mapBoundary - spawnRange;
 
         position.x = Mathf.Clamp(position.x, minX, maxX);
         position.z = Mathf.Clamp(position.z, minZ, maxZ);
