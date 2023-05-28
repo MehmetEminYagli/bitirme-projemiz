@@ -349,6 +349,7 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/M4 Silah/Scripts/GunfireController.cs"
 "Assets/Models/JMO Assets/WarFX/Demo/Assets/CFX_AutoStopLoopedEffect.cs"
 "Assets/Models/JMO Assets/WarFX/Demo/Assets/CFX_Demo_RandomDir.cs"
 "Assets/Models/JMO Assets/WarFX/Demo/Assets/CFX_Demo_RotateCamera.cs"
