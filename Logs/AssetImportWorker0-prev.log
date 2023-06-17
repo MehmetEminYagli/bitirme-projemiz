@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/burha/Desktop/bitirme projesi/bitirme-projemiz
+C:/Users/burha/Desktop/Battle Royale Mobile Game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49430
-Successfully changed project path to: C:/Users/burha/Desktop/bitirme projesi/bitirme-projemiz
-C:/Users/burha/Desktop/bitirme projesi/bitirme-projemiz
+65185
+Successfully changed project path to: C:/Users/burha/Desktop/Battle Royale Mobile Game
+C:/Users/burha/Desktop/Battle Royale Mobile Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,15 +47,15 @@ C:/Users/burha/Desktop/bitirme projesi/bitirme-projemiz
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10668] Host "[IP] 192.168.1.34 [Port] 0 [Flags] 2 [Guid] 2492538814 [EditorId] 2492538814 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-11CAV81) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [11972] Host "[IP] 192.168.10.237 [Port] 0 [Flags] 2 [Guid] 974596955 [EditorId] 974596955 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-11CAV81) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [10668] Host "[IP] 192.168.1.34 [Port] 0 [Flags] 2 [Guid] 2492538814 [EditorId] 2492538814 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-11CAV81) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [11972] Host "[IP] 192.168.10.237 [Port] 0 [Flags] 2 [Guid] 974596955 [EditorId] 974596955 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-11CAV81) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 185.35 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 163.53 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.19f1 (c9714fde33b6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/burha/Desktop/bitirme projesi/bitirme-projemiz/Assets
+[Subsystems] Discovering subsystems at path C:/Users/burha/Desktop/Battle Royale Mobile Game/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -69,95 +69,95 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56372
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014514 seconds.
+Registered in 0.014535 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 463 ms
-Refreshing native plugins compatible for Editor in 156.50 ms, found 3 plugins.
+Android Extension - Scanning For ADB Devices 408 ms
+Refreshing native plugins compatible for Editor in 176.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.309 seconds
+- Completed reload, in  1.578 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2310ms)
-		BeginReloadAssembly (184ms)
+	ReloadAssembly (1579ms)
+		BeginReloadAssembly (157ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (1918ms)
-			LoadAssemblies (181ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1233ms)
+			LoadAssemblies (152ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (720ms)
+			SetupTypeCache (190ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (1050ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (912ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (638ms)
+				InitializePlatformSupportModulesInManaged (515ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
+				RefreshPlugins (177ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (92ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (70ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010650 seconds.
+Registered in 0.007873 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\bitirme projesi\bitirme-projemiz\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\bitirme projesi\bitirme-projemiz\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\Battle Royale Mobile Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\Battle Royale Mobile Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.960 seconds
+- Completed reload, in  1.751 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1961ms)
-		BeginReloadAssembly (259ms)
+	ReloadAssembly (1752ms)
+		BeginReloadAssembly (188ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (9ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (44ms)
-		EndReloadAssembly (1451ms)
-			LoadAssemblies (241ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (1372ms)
+			LoadAssemblies (138ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (453ms)
+			SetupTypeCache (442ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (653ms)
+			RebuildScriptCaches (88ms)
+			SetupLoadedEditorAssemblies (642ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (30ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (442ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (133ms)
+				ProcessInitializeOnLoadAttributes (431ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
+				AfterProcessingInitializeOnLoad (15ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
 Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3156 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 22 unused Assets / (56.4 KB). Loaded Objects now: 3642.
+Unloading 22 unused Assets / (56.3 KB). Loaded Objects now: 3642.
 Memory consumption went from 124.9 MB to 124.8 MB.
-Total: 4.571700 ms (FindLiveObjects: 0.376500 ms CreateObjectMapping: 0.321300 ms MarkObjects: 3.745600 ms  DeleteObjects: 0.127200 ms)
+Total: 4.496300 ms (FindLiveObjects: 0.371900 ms CreateObjectMapping: 0.308700 ms MarkObjects: 3.705500 ms  DeleteObjects: 0.109000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -171,17 +171,66 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 216432.806538 seconds.
-  path: Assets/prefabs/Mutant Walking Variant.prefab
-  artifactKey: Guid(f7dd993ff4ddffb4d8c7a7e65e1caf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs/Mutant Walking Variant.prefab using Guid(f7dd993ff4ddffb4d8c7a7e65e1caf3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c426fc92ef4f1addf642db96db11642') in 0.636277 seconds 
+  Time since last request: 251045.257620 seconds.
+  path: Assets/Scripts/AltınvePuanKaydetme.cs
+  artifactKey: Guid(89614d650dd43bc47bed7313666af96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AltınvePuanKaydetme.cs using Guid(89614d650dd43bc47bed7313666af96b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ae67bd3084b8387f7c61ed08cded9ff') in 0.074258 seconds 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Assets/prefabs/biozomie.prefab
-  artifactKey: Guid(8517f5138777736458e3ceb02985d7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefabs/biozomie.prefab using Guid(8517f5138777736458e3ceb02985d7f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b989af0068c9212383d6d80937a187a') in 0.216789 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007357 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\Battle Royale Mobile Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\burha\Desktop\Battle Royale Mobile Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.887 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1888ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1479ms)
+			LoadAssemblies (154ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (477ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (79ms)
+			SetupLoadedEditorAssemblies (690ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (47ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (172ms)
+				ProcessInitializeOnLoadAttributes (418ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Shader 'WFX/Transparent Diffuse': fallback shader 'Particles/Alpha Blended' not found
+Shader 'WFX/Transparent Specular': fallback shader 'Particles/Alpha Blended' not found
+Refreshing native plugins compatible for Editor in 3.55 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3123 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 15 unused Assets / (24.6 KB). Loaded Objects now: 3645.
+Memory consumption went from 121.5 MB to 121.4 MB.
+Total: 4.445700 ms (FindLiveObjects: 0.429700 ms CreateObjectMapping: 0.350000 ms MarkObjects: 3.608800 ms  DeleteObjects: 0.055200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
